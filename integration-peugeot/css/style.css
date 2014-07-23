@@ -434,7 +434,7 @@ section{
 
 /************* SLIDER ******************/
 #slideshow{
-	height: 330px;
+	height: 220px;
 	}
 	
 .banner { position: relative; overflow: auto; width: 940px; margin: 0 auto; }
@@ -500,7 +500,7 @@ section{
 .banner .dots {
     position: absolute;
     right: 20px;
-    bottom: 13px;
+    bottom: 123px;
 	height: 13px;
 }
 .banner .dots li {
@@ -526,13 +526,13 @@ section{
 
 /************* EDITO ******************/
 #edito{
-	min-height: 200px;
+	/*min-height: 200px;*/
 	background:#fff;
 	}
 
 #edito .wrapper{
 	display: table;
-	padding-bottom: 20px;
+	/*padding-bottom: 20px;*/
 	}
 #edito h2{
 	background: #fafafa;
@@ -567,6 +567,8 @@ section{
 	font: 14px 'citroenregular', Arial, Helvetica, sans-serif;
 	text-transform: uppercase;
 	float: right;
+	position: relative;
+	top: -10px;
 	}
 	
 #edito .btn_learnmore:hover{
@@ -583,7 +585,7 @@ section{
 /************* MEA 4 COLONNE ******************/
 #MEA .wrapper .group1   .item{
 	width: 183px;
-	height: 158px;
+	height: 123px;
 	background: url(../images/BG_triangle_white.png) no-repeat top center #fafafa;
 	padding: 34px 18px 18px;
 	float: left;
