@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <!--[if lt IE 9]>
+            <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+        <![endif]-->
+        <title>06_faq</title>
+        <link rel="stylesheet" href="css/style.css"  />
+        <!-- css accordion -->
+        <link rel="stylesheet" href="css/jquery-ui.css"/>
+        <!-- JS accordion --->
+        <script src="js/jquery-1.10.2.js"></script>
+        <script src="js/jquery-ui.js"></script>
+        
+    </head>
+
+    <body>
+    
+    	<!------------------ HEADER ------------------------------------------------------------------------------>
+        
+        <header>
+        	<div class="Header_1">
+            	<a href="02_home.html" class="logo-citroen"><img src="images/logo-peugeot.png" alt="logo PEUGEOT" /></a>
+                <a href="#" class="btn_logout"><span class="icon_user">&nbsp;</span>DÉCONNEXION</a>
+                <span class="hello_user">Jean-baptiste Poquelin</span>
+                
+                <!---- select language ------>
+                <div class="content_select_language">
+                    <ul class="select_language">
+                        <li><a href='#'>Langue</a>
+                            <ul>
+                                <li><a href='#'>Français</a></li>
+                                <li><a href='#'>anglais</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="Header_2">
+                <h1 class="base_line">CRM Manager<br/><span>Les solutions pour booster votre relation client</span></h1>
+                <!-- HTML for SEARCH BAR -->
+                <div id="content_searchBar">
+                    <form id="searchBar" method="get" action="http://www.google.com">
+                            <input type="submit" value="" class="btn_searchBar">
+                            <input type="text" id="inputSearch" class="inputText" name="q" size="21" maxlength="120" value="RECHERCHE">
+                    </form>
+                    <div class="clear"></div>
+                </div>
+                <!-- SCRIPT INPUT RECHERCHE --->
+                <script>
+                   $(function() {
+                       $('#inputSearch').focus(function() {
+                           if ($(this).val() == 'RECHERCHE')
+                           {
+                               $(this).val('');
+                           }
+                       });
+
+                       $('#inputSearch').blur(function() {
+                           if ($(this).val() == '')
+                           {
+                               $(this).val('RECHERCHE');
+                           }
+                       });
+                   });
+                </script>
+            </div>
+            
+            <!------------------ NAVIGATION  -------------------------------------->
+            <nav class="navigation">
+            
+                <ul class="nav-main">
+                    <li class="first "><a href="#">Accueil</a></li>
+                    <li class="list"><a href="#">Stratégie</a>
+                    	<ul class="nav-sub">
+                            <li><a href="#">Ambition de la marque</a></li>
+                            <li><a href="#">Projections 2016 & objectif</a></li>
+                            <li><a href="#">Résultats des sites pilotes</a></li>
+                            <li><a href="#">Comprendre les indicateurs KPI’s</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">Système d’information Client</a></li>
+                    <li><a href="#">Métier CRM</a></li>
+                    <li><a href="#">Déploiement</a></li>
+                    <li class="active"><a href="#">Faq</a></li>
+                    <li><a href="#">Blog</a></li>
+                    <li><a href="#">Base documentaire</a></li>
+                </ul>
+               
+            </nav>
+            
+        </header>
+    	
+        <!------------------ CONTAINER ------------------------------------------------------------------------------>
+        <div id="container">
+        	
+            <!-------- File d'ariane ----------->
+        	<section id="file_dariane">
+            	<div class="wrapper">
+                	<ul class="fil_dariane">
+                    	<li><a href="#">Accueil > </a></li>
+                        <li>Faq</li>
+                    </ul>
+                </div>
+            </section>
+            
+            <!--------Banner -------------->
+            <section id="banner_1col">
+            	<div class="wrapper">
+                    <div class="banner_img">
+                    	<img src="images_administrable/Banner_FAQ.png" alt="FAQ" />
+                    	<h1>FAQ</h1>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque lorem tortor, malesuada ac rhoncus sed, porttitor eu nisi
+                         Mauris quis ligula blandit, mollis turpis vel, tincidunt urna. Morbi eget porttitor odio, vel luctus ligula. Integer vel diam tempus neque elementum pharetra. 
+                         Nunc varius sed felis ut iaculis. Morbi at tellus lacinia, mollis magna ut imperdiet nisi. Fusce vel pellentesque tellus, id consequat quam. In turpis nisi, 
+                         fermentum in erat sed, luctus lacinia magna. Curabitur auctor et diam at pharetra.</p>
+                    </div>
+                </div>
+            </section>
+            
+            <!-------- navigation Thème -------------->
+            <section id="nav_theme">
+            	<div class="wrapper">
+                    <a class="active" href="#">Thèmes 1</a>
+                    <a href="#">Thèmes 2</a>
+                    <a href="#">Thèmes 3</a>
+                    <a href="#">Thèmes 4</a>
+                    <a href="#">Thèmes 5</a>
+                    <a href="#">Thèmes 6</a>
+                </div>
+            </section>
+            
+            <!-------- FAQ ACCORDION -------------->
+            
+            <section id="faq">
+            	<div class="wrapper">
+                	
+                    <!-- icon a+ / a- / print --> 
+                	<ul class="btn_txt">
+                    	<li><a href="#" class="btn_print"></a></li>
+                    	<li><a href="#" class="btn_a_less">a-</a></li>
+                        <li><a href="#" class="btn_a_more">a+</a></li>
+                    </ul>
+                	<!-- THEME 1-->
+                	<h2 class="first">Thème FAQ 1</h2>
+                	<div class="accordion">
+                        <h3>Question 1</h3>
+                        <div>
+                            <p>Mauris mauris ante, blandit et, ultrices a, suscipit eget, quam. Integer ut neque. Vivamus nisi metus, molestie vel, gravida in, condimentum sit amet, nunc.
+                            Nam a nibh. Donec suscipit eros. Nam mi. Proin viverra leo ut odio. Curabitur malesuada. Vestibulum a velit eu ante scelerisque vulputate.
+                            Mauris mauris ante, blandit et, ultrices a, suscipit eget, quam. Integer ut neque. Vivamus nisi metus, molestie vel, gravida in, condimentum sit amet, nunc.
+                            Nam a nibh. Donec suscipit eros. Nam mi. Proin viverra leo ut odio. Curabitur malesuada. Vestibulum a velit eu ante scelerisque vulputate.
+                            Mauris mauris ante, blandit et, ultrices a, suscipit eget, quam. Integer ut neque. Vivamus nisi metus, molestie vel, gravida in, condimentum sit amet, nunc.
+                            Nam a nibh. Donec suscipit eros. Nam mi. Proin viverra leo ut odio. Curabitur malesuada. Vestibulum a velit eu ante scelerisque vulputate.
+                            Mauris mauris ante, blandit et, ultrices a, suscipit eget, quam. Integer ut neque. Vivamus nisi metus, molestie vel, gravida in, condimentum sit amet, nunc.
+                            Nam a nibh. Donec suscipit eros. Nam mi. Proin viverra leo ut odio. Curabitur malesuada. Vestibulum a velit eu ante scelerisque vulputate.</p>
+                        </div>
+                        <h3>Question 2</h3>
+                        <div>
+                            <p>Sed non urna. Donec et ante. Phasellus eu ligula. Vestibulum sit amet purus. Vivamus hendrerit, dolor at aliquet laoreet, 
+                            mauris turpis porttitor velit, faucibus interdum tellus libero ac justo. Vivamus non quam. In suscipit faucibus urna. </p>
+                        </div>
+                        
+                        <h3>Question 3</h3>
+                        <div>
+                            <p>Nam enim risus, molestie et, porta ac, aliquam ac, risus. Quisque lobortis. Phasellus pellentesque purus in massa. Aenean in pede. Phasellus ac
+                             libero ac tellus pellentesque semper. Sed ac felis. Sed commodo, magna quis lacinia ornare, quam ante aliquam nisi, eu iaculis leo purus venenatis dui. </p>
+                            <ul>
+                                <li>List item one</li>
+                                <li>List item two</li>
+                                <li>List item three</li>
+                            </ul>
+                        </div>
+                        <h3>Question 4</h3>
+                        <div>
+                            <p>Cras dictum. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum ante ipsum primis in faucibus orci 
+                            luctus et ultrices posuere cubilia Curae; Aenean lacinia mauris vel est. </p>
+                            <p>Suspendisse eu nisl. Nullam ut libero. Integer dignissim consequat lectus. 
+                            Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. </p>
+                        </div>
+                    </div>
+                    
+                    <!-- THEME 2-->
+                    <h2>Thème FAQ 2</h2>	
+                    <div class="accordion">
+                        <h3>Question 1</h3>
+                        <div>
+                            <p>Mauris mauris ante, blandit et, ultrices a, suscipit eget, quam. Integer ut neque. Vivamus nisi metus, molestie vel, gravida in, condimentum sit amet, nunc.
+                            Nam a nibh. Donec suscipit eros. Nam mi. Proin viverra leo ut odio. Curabitur malesuada. Vestibulum a velit eu ante scelerisque vulputate.</p>
+                        </div>
+                        <h3>Question 2</h3>
+                        <div>
+                            <p>Sed non urna. Donec et ante. Phasellus eu ligula. Vestibulum sit amet purus. Vivamus hendrerit, dolor at aliquet laoreet, 
+                            mauris turpis porttitor velit, faucibus interdum tellus libero ac justo. Vivamus non quam. In suscipit faucibus urna. </p>
+                        </div>
+                        
+                        <h3>Question 3</h3>
+                        <div>
+                            <p>Nam enim risus, molestie et, porta ac, aliquam ac, risus. Quisque lobortis. Phasellus pellentesque purus in massa. Aenean in pede. Phasellus ac
+                             libero ac tellus pellentesque semper. Sed ac felis. Sed commodo, magna quis lacinia ornare, quam ante aliquam nisi, eu iaculis leo purus venenatis dui. </p>
+                            <ul>
+                                <li>List item one</li>
+                                <li>List item two</li>
+                                <li>List item three</li>
+                            </ul>
+                        </div>
+                        <h3>Question 4</h3>
+                        <div>
+                            <p>Cras dictum. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum ante ipsum primis in faucibus orci 
+                            luctus et ultrices posuere cubilia Curae; Aenean lacinia mauris vel est. </p>
+                            <p>Suspendisse eu nisl. Nullam ut libero. Integer dignissim consequat lectus. 
+                            Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. </p>
+                        </div>
+                    </div>
+                    
+                    <!-- THEME 3-->
+                    <h2>Thème FAQ 3</h2>	
+                    <div class="accordion">
+                        <h3>Question 1</h3>
+                        <div>
+                            <p>Mauris mauris ante, blandit et, ultrices a, suscipit eget, quam. Integer ut neque. Vivamus nisi metus, molestie vel, gravida in, condimentum sit amet, nunc.
+                            Nam a nibh. Donec suscipit eros. Nam mi. Proin viverra leo ut odio. Curabitur malesuada. Vestibulum a velit eu ante scelerisque vulputate.</p>
+                        </div>
+                        <h3>Question 2</h3>
+                        <div>
+                            <p>Sed non urna. Donec et ante. Phasellus eu ligula. Vestibulum sit amet purus. Vivamus hendrerit, dolor at aliquet laoreet, 
+                            mauris turpis porttitor velit, faucibus interdum tellus libero ac justo. Vivamus non quam. In suscipit faucibus urna. </p>
+                        </div>
+                        
+                        <h3>Question 3</h3>
+                        <div>
+                            <p>Nam enim risus, molestie et, porta ac, aliquam ac, risus. Quisque lobortis. Phasellus pellentesque purus in massa. Aenean in pede. Phasellus ac
+                             libero ac tellus pellentesque semper. Sed ac felis. Sed commodo, magna quis lacinia ornare, quam ante aliquam nisi, eu iaculis leo purus venenatis dui. </p>
+                            <ul>
+                                <li>List item one</li>
+                                <li>List item two</li>
+                                <li>List item three</li>
+                            </ul>
+                        </div>
+                        <h3>Question 4</h3>
+                        <div>
+                            <p>Cras dictum. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum ante ipsum primis in faucibus orci 
+                            luctus et ultrices posuere cubilia Curae; Aenean lacinia mauris vel est. </p>
+                            <p>Suspendisse eu nisl. Nullam ut libero. Integer dignissim consequat lectus. 
+                            Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. </p>
+                        </div>
+                    </div>
+                    
+                    
+                    <!-- THEME 4-->
+                    <h2>Thème FAQ 4</h2>	
+                    <div class="accordion">
+                        <h3>Question 1</h3>
+                        <div>
+                            <p>Mauris mauris ante, blandit et, ultrices a, suscipit eget, quam. Integer ut neque. Vivamus nisi metus, molestie vel, gravida in, condimentum sit amet, nunc.
+                            Nam a nibh. Donec suscipit eros. Nam mi. Proin viverra leo ut odio. Curabitur malesuada. Vestibulum a velit eu ante scelerisque vulputate.</p>
+                        </div>
+                        <h3>Question 2</h3>
+                        <div>
+                            <p>Sed non urna. Donec et ante. Phasellus eu ligula. Vestibulum sit amet purus. Vivamus hendrerit, dolor at aliquet laoreet, 
+                            mauris turpis porttitor velit, faucibus interdum tellus libero ac justo. Vivamus non quam. In suscipit faucibus urna. </p>
+                        </div>
+                        
+                        <h3>Question 3</h3>
+                        <div>
+                            <p>Nam enim risus, molestie et, porta ac, aliquam ac, risus. Quisque lobortis. Phasellus pellentesque purus in massa. Aenean in pede. Phasellus ac
+                             libero ac tellus pellentesque semper. Sed ac felis. Sed commodo, magna quis lacinia ornare, quam ante aliquam nisi, eu iaculis leo purus venenatis dui. </p>
+                            <ul>
+                                <li>List item one</li>
+                                <li>List item two</li>
+                                <li>List item three</li>
+                            </ul>
+                        </div>
+                        <h3>Question 4</h3>
+                        <div>
+                            <p>Cras dictum. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum ante ipsum primis in faucibus orci 
+                            luctus et ultrices posuere cubilia Curae; Aenean lacinia mauris vel est. </p>
+                            <p>Suspendisse eu nisl. Nullam ut libero. Integer dignissim consequat lectus. 
+                            Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. </p>
+                        </div>
+                    </div>
+                     <script type="text/javascript">
+						$(function() {
+						$( ".accordion" ).accordion({
+						collapsible: true
+						});
+						});
+					</script>
+                </div>
+            </section>
+        </div><!-- END Container ---->
+        
+        
+        <!------------------ FOOTER ------------------------------------------------------------------------------>
+        <footer>
+        	<div class="footer_1">
+            	<div class=" wrapper">
+                    <ul class="first">
+                        <li class="title"><a href="#">Accueil</a></li>
+                    </ul>
+                    <ul>
+                        <li class="title"><a href="#">Stratégie</a></li>
+                        <li ><a href="#">• Ambition de la marque</a></li>
+                        <li ><a href="#">• Projections 2016 & objectif</a></li>
+                        <li ><a href="#">• Résultats des sites pilotes</a></li>
+                        <li ><a href="#">• Comprendre les indicateurs KPI’s</a></li>
+                    </ul>
+                    <ul>
+                        <li class="title"><a href="#">Si client</a></li>
+                        <li ><a href="#">• N-1.1</a></li>
+                        <li ><a href="#">• N-1.2</a></li>
+                        <li ><a href="#">• N-1.3</a></li>
+                        <li ><a href="#">• N-1.4</a></li>
+                        <li ><a href="#">• N-1.5</a></li>
+                        <li ><a href="#">• N-1.6</a></li>
+                        <li ><a href="#">• N-1.7</a></li>
+                    </ul>
+                    <ul>
+                        <li class="title"><a href="#">Si client</a></li>
+                        <li ><a href="#">• Data management</a></li>
+                        <li ><a href="#">• Campaign management</a></li>
+                        <li ><a href="#">• Lead management</a></li>
+                        <li ><a href="#">• Partager & protéger les données</a></li>
+                        <li ><a href="#">• N-1.7</a></li>
+                    </ul>
+                    <ul>
+                        <li class="title"><a href="#">déploiement</a></li>
+                    </ul>
+                    <ul>
+                        <li class="title"><a href="#">faq</a></li>
+                        <li class="title"><a href="#">blog</a></li>
+                        <li class="title"><a href="#">base documentaire</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer_2">
+            	<div class="wrapper">
+                    <ul>
+                        <li><a href="#">Mentions légales</a></li>
+                        <li><a href="#">-  Crédits</a></li>
+                        <li><a href="#">-  Contact</a></li>
+                    </ul>
+                    <a href="#" class="logo_footer"><img style="float: right;" src="images/logo-exellence-client.png" alt="logo exellence client" /></a>
+                </div>
+            </div>
+        </footer>
+    </body>
+</html>

@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <!--[if lt IE 9]>
+            <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+        <![endif]-->
+        <title>01_home</title>
+        <link rel="stylesheet" href="css/style.css"  />
+        <!-- JS SLIDER -->
+        <script src="js/jquery-latest.min.js"></script>
+		<script src="js/unslider.js"></script>
+
+    </head>
+
+    <body>
+    
+    	<!------------------ HEADER ---------------------------------------------------------------------------- -->
+        
+        <header>
+        	<div class="Header_1">
+            	<a href="02_home.html" class="logo-citroen"><img src="images/logo-peugeot.png" alt="logo PEUGEOT" /></a>
+                <a href="#" class="btn_logout"><span class="icon_user">&nbsp;</span>DÉCONNEXION</a>
+                <span class="hello_user">Jean-baptiste Poquelin</span>
+                
+                <!---- select language ---- -->
+                <div class="content_select_language">
+                    <ul class="select_language">
+                        <li><a href='#'>Langue</a>
+                            <ul>
+                                <li><a href='#'>Français</a></li>
+                                <li><a href='#'>anglais</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="Header_2">
+                <h1 class="base_line">CRM Manager<br/><span>Les solutions pour booster votre relation client</span></h1>
+                <!-- HTML for SEARCH BAR -->
+                <div id="content_searchBar">
+                    <form id="searchBar" method="get" action="http://www.google.com">
+                            <input type="submit" value="" class="btn_searchBar">
+                            <input type="text" id="inputSearch" class="inputText" name="q" size="21" maxlength="120" value="RECHERCHE">
+                    </form>
+                    <div class="clear"></div>
+                </div>
+                <!-- SCRIPT INPUT RECHERCHE -->
+                <script>
+                   $(function() {
+                       $('#inputSearch').focus(function() {
+                           if ($(this).val() == 'RECHERCHE')
+                           {
+                               $(this).val('');
+                           }
+                       });
+
+                       $('#inputSearch').blur(function() {
+                           if ($(this).val() == '')
+                           {
+                               $(this).val('RECHERCHE');
+                           }
+                       });
+                   });
+                </script>
+            </div>
+            
+            <!------------------ NAVIGATION  ------------------------------------ -->
+            <nav class="navigation">
+            
+                <ul class="nav-main">
+                    <li class="first active"><a href="#">Accueil</a></li>
+                    <li class="list"><a href="#">Stratégie</a>
+                    	<ul class="nav-sub">
+                            <li><a href="#">Ambition de la marque</a></li>
+                            <li><a href="#">Projections 2016 & objectif</a></li>
+                            <li><a href="#">Résultats des sites pilotes</a></li>
+                            <li><a href="#">Comprendre les indicateurs KPI’s</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">Système d’information Client</a></li>
+                    <li><a href="#">Métier CRM</a></li>
+                    <li><a href="#">Déploiement</a></li>
+                    <li><a href="#">Faq</a></li>
+                    <li><a href="#">Blog</a></li>
+                    <li><a href="#">Base documentaire</a></li>
+                </ul>
+               
+            </nav>
+            
+        </header>
+    	
+       <!------------------ CONTAINER ---------------------------------------------------------------------------- -->
+        <div id="container">
+        
+        	<!------------------ SLIDESHOW --------------------------------------------------- -->
+            <section id="slideshow">
+                <div class="wrapper">
+                	<div class="banner">
+                        <ul>
+                            <li>
+                                <a href="#">
+                                    <img src="images_administrable/slider.jpg" alt="lorem ipsum">
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <img src="images_administrable/slider.jpg" alt="lorem ipsum">
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <img src="images_administrable/slider.jpg" alt="lorem ipsum">
+                                </a>
+                            </li>
+                        </ul>
+                   </div>
+                </div>
+            </section>
+            
+   
+            
+            <!------------------ EDITO --------------------------------------------------- -->
+            <section id="edito">
+                <div class="wrapper">
+                    <h2>Edito</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque lorem tortor, malesuada ac rhoncus sed, porttitor eu nisi. Mauris quis ligula blandit,
+                    mollis turpis vel, tincidunt urntorbi at tellus lacinia, mollis magna ut, imperdiet nisi. Fusce vel pellentesque tellus, id consequat quam. In turpis nisi,
+                    fermentum in erat sed, luctus lacinia magna. Curabitur auctor et diam at pharetra. Aliquam vel eleifend turpis. Etiam venenatis posuere iaculis.<span class="guillemet_close">&nbsp;</span></p>
+                    <a href="#" class="btn_learnmore">En savoir plus</a>
+                </div><!--end wrapper-->
+            </section>
+            
+           <!------------------ MEA --------------------------------------------------- --> 
+           <section id="MEA">
+                <div class="bg_group1">
+       	            <div class="wrapper">
+                       <div class="group1">
+                           <div class="item first abs_btn_learnmore">
+                                <h2>Stratégie</h2>
+                                <p>Integer id tincidunt metus. Lorem ipsumapien...</p>
+                                <a href="#" class="btn_learnmore">En savoir plus</a>
+                           </div>
+                            <div class="item abs_btn_learnmore">
+                                <h2>SI Client</h2>
+                                <p>Integer id tincidunt metus. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin ullamcorper nulla sit amet suscipit aliquet. Vestibulum tortor sapien...</p>
+                                <a href="#" class="btn_learnmore">En savoir plus</a>
+                           </div>
+                            <div class="item abs_btn_learnmore">
+                                <h2>Métier CRM</h2>
+                                <p>Integer id tincidunt metus. Loremrtor sapien...</p>
+                                <a href="#" class="btn_learnmore">En savoir plus</a>
+                           </div>
+                            <div class="item last abs_btn_learnmore">
+                                <h2>Déploiement</h2>
+                                <p>Integer id tincidunt metus. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin ullamcorper nulla sit amet suscipit aliquet. Vestibulum tortor sapien...</p>
+                                <a href="#" class="btn_learnmore">En savoir plus</a>
+                           </div>
+                       </div>
+                       <div class="group1 col_2">
+                           <div class="item first">
+                                <h2>Stratégie</h2>
+                                <p>Integer id tincidunt metus. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin ullamcorper nulla sit amet suscipit aliquet. Vestibulum tortor sapien
+                                Integer id tincidunt metus. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin ullamcorper nulla sit amet suscipit aliquet. Vestibulum tortor sapien...</p>
+                                <a href="#" class="btn_learnmore">En savoir plus</a>
+                           </div>
+                            <div class="item">
+                                <h2>Déploiement</h2>
+                                <p>Integer id tincidunt metus. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin ullamcorper nulla sit amet suscipit aliquet. Vestibulum tortor sapien
+                                Integer id tincidunt metus. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin ullamcorper nulla sit amet suscipit aliquet. Vestibulum tortor sapien...</p>
+                                <a href="#" class="btn_learnmore">En savoir plus</a>
+                           </div>
+                       </div>
+                    </div>
+                </div>
+                
+                <div class="wrapper">
+                   <div class="group2">
+                       <div class="item first">
+                            <div class="mea_group2_bg_top"></div>
+                            <a href="#"><h3>Blog</h3>
+                            <img class="picture" src="images_administrable/icone_blog.png" alt="icone blog"/>
+                            <p><b>Lorem ipsum dolor sit amet,</b> consectetur adipiscing elit.
+                            Quisque lorem tortor, malesuada ac rhoncus sed, porttitor eu nisi. Mauris quis ligula blandit. </p></a>
+                       </div>
+                       <div class="item">
+                            <div class="mea_group2_bg_top"></div>
+                            <a href="#"><h3>faq</h3>
+                            <a href="#"><img class="picture" src="images_administrable/icon_faq.png" alt="icone faq"/>
+                            <p><b>Lorem ipsum dolor sit amet,</b> consectetur adipiscing elit.
+                            Quisque lorem tortor, malesuada ac rhoncus sed, porttitor eu nisi. Mauris quis ligula blandit. </p></a>
+                       </div>
+                       <div class="item">
+                            <div class="mea_group2_bg_top"></div>
+                            <a href="#"><h3>base documentaire</h3>
+                            <a href="#"><img class="picture" src="images_administrable/icon_basedocumentaire.png" alt="icone base documentaire"/>
+                            <p><b>Lorem ipsum dolor sit amet,</b> consectetur adipiscing elit.
+                            Quisque lorem tortor, malesuada ac rhoncus sed, porttitor eu nisi. Mauris quis ligula blandit. </p></a>
+                       </div>
+                      
+                   </div>
+              </div><!--end wrapper-->
+           </section>
+       </div><!-- END Container -- -->
+        
+        
+         <!------------------ FOOTER ------------------------------------------------------------------------------>
+        <footer>
+            <div class="footer_1">
+                <div class=" wrapper">
+                    <ul class="first">
+                        <li class="title"><a href="#">Accueil</a></li>
+                    </ul>
+                    <ul>
+                        <li class="title"><a href="#">Stratégie</a></li>
+                        <li ><a href="#">• Ambition de la marque</a></li>
+                        <li ><a href="#">• Projections 2016 &amp; objectif</a></li>
+                        <li ><a href="#">• Résultats des sites pilotes</a></li>
+                        <li ><a href="#">• Comprendre les indicateurs KPI’s</a></li>
+                    </ul>
+                    <ul>
+                        <li class="title"><a href="#">Si client</a></li>
+                        <li ><a href="#">• N-1.1</a></li>
+                        <li ><a href="#">• N-1.2</a></li>
+                        <li ><a href="#">• N-1.3</a></li>
+                        <li ><a href="#">• N-1.4</a></li>
+                        <li ><a href="#">• N-1.5</a></li>
+                        <li ><a href="#">• N-1.6</a></li>
+                        <li ><a href="#">• N-1.7</a></li>
+                    </ul>
+                    <ul>
+                        <li class="title"><a href="#">Si client</a></li>
+                        <li ><a href="#">• Data management</a></li>
+                        <li ><a href="#">• Campaign management</a></li>
+                        <li ><a href="#">• Lead management</a></li>
+                        <li ><a href="#">• Partager &amp; protéger les données</a></li>
+                        <li ><a href="#">• N-1.7</a></li>
+                    </ul>
+                    <ul>
+                        <li class="title"><a href="#">déploiement</a></li>
+                    </ul>
+                    <ul>
+                        <li class="title"><a href="#">faq</a></li>
+                        <li class="title"><a href="#">blog</a></li>
+                        <li class="title"><a href="#">base documentaire</a></li>
+                        <li class="title"><a href="#">Mentions légales</a></li>
+                        <li class="title"><a href="#">Crédits</a></li>
+                        <li class="title"><a href="#">Contact</a></li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="footer_2">
+                <div class="wrapper">
+                    <a href="#" class="logo_footer"><img src="images/logo-exellence-client.png" alt="logo exellence client" /></a>
+                </div>
+            </div>
+            
+           
+        </footer>
+        <!--- SCRIPT SLIDER -->
+        <script type="text/javascript">
+            $(function() {
+                $('.banner').unslider({
+                    speed: 500,               //  The speed to animate each slide (in milliseconds)
+                    //delay: 3000,              //  The delay between slide animations (in milliseconds)
+                    //keys: true,               //  Enable keyboard (left, right) arrow shortcuts
+                    dots: true,               //  Display dot navigation
+                    fluid: false              //  Support responsive design. May break non-responsive designs
+                });
+            });
+        </script>
+    </body>
+</html>

@@ -1,0 +1,2287 @@
+@charset "UTF-8";
+/* CSS Document */
+
+Body{ background: #fafafa; margin: 0; font-family: Arial, Helvetica, sans-serif;}
+*{margin: 0; padding: 0;}
+a{ border: none;}
+a img{ border: none;}
+
+
+/********************************* FONTS *************************************************/
+
+
+
+
+@font-face {
+    font-family: 'citroenbold_italic';
+    src: url('../fonts/citroen_bold_italic-webfont.eot');
+    src: url('../fonts/citroen_bold_italic-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/citroen_bold_italic-webfont.woff') format('woff'),
+         url('../fonts/citroen_bold_italic-webfont.ttf') format('truetype'),
+         url('../fonts/citroen_bold_italic-webfont.svg#citroenbold_italic') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+
+
+@font-face {
+    font-family: 'citroenbold';
+    src: url('../fonts/citroen_bold-webfont.eot');
+    src: url('../fonts/citroen_bold-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/citroen_bold-webfont.woff') format('woff'),
+         url('../fonts/citroen_bold-webfont.ttf') format('truetype'),
+         url('../fonts/citroen_bold-webfont.svg#citroenbold') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+
+
+@font-face {
+    font-family: 'citroenitalic';
+    src: url('../fonts/citroen_italic-webfont.eot');
+    src: url('../fonts/citroen_italic-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/citroen_italic-webfont.woff') format('woff'),
+         url('../fonts/citroen_italic-webfont.ttf') format('truetype'),
+         url('../fonts/citroen_italic-webfont.svg#citroenitalic') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+
+
+@font-face {
+    font-family: 'citroenlight_italic';
+    src: url('../fonts/citroen_light_italic-webfont.eot');
+    src: url('../fonts/citroen_light_italic-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/citroen_light_italic-webfont.woff') format('woff'),
+         url('../fonts/citroen_light_italic-webfont.ttf') format('truetype'),
+         url('../fonts/citroen_light_italic-webfont.svg#citroenlight_italic') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+
+
+@font-face {
+    font-family: 'citroenlight';
+    src: url('../fonts/citroen_light-webfont.eot');
+    src: url('../fonts/citroen_light-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/citroen_light-webfont.woff') format('woff'),
+         url('../fonts/citroen_light-webfont.ttf') format('truetype'),
+         url('../fonts/citroen_light-webfont.svg#citroenlight') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+
+
+@font-face {
+    font-family: 'citroenregular';
+    src: url('../fonts/citroen_regular-webfont.eot');
+    src: url('../fonts/citroen_regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/citroen_regular-webfont.woff') format('woff'),
+         url('../fonts/citroen_regular-webfont.ttf') format('truetype'),
+         url('../fonts/citroen_regular-webfont.svg#citroenregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+
+/*****************************************************   ALL  *****************************************************/
+
+.txtred{ color: #d62c35;}
+
+.bgRed{ background: #d62c35;}
+
+
+header{
+	border-top: 3px solid #d62c35; 
+	padding-top: 9px;
+	height: auto;
+	}
+	
+	
+.Header_1{
+	width: 940px;
+	height: 23px;
+	margin: 0 auto;
+	}
+	
+	.btn_logout{
+		font-family: 'citroenregular', Arial, Helvetica, sans-serif;
+		
+		background-color : #b4b3b4;
+		color:#FFF;
+		text-decoration: none;
+		font-size: 11px;
+		border-radius: 15px;
+		-moz-border-radius: 15px;
+		-webkit-border-radius: 15px;
+		-khtml-border-radius: 15px;
+		padding:4px 20px 3px 20px;	
+		float: right;
+		}
+	
+	.icon_user{
+		background: url(../images/icone-user.png) no-repeat;
+		width:10px; height:10px;
+		float: left;
+		padding-right: 7px;
+		}
+	.hello_user{
+		font-size: 11px;
+		color:#acabac;
+		float: right;
+		padding: 5px 20px 0 0;
+		}
+
+
+	
+		
+/*********************** MENU LANGUE ************************/
+.content_select_language{
+		width: 140px;
+		height: 23px;
+		float: right;
+		margin-right: 48px;
+		}
+
+
+.select_language {
+	background: url(../images/BG_select.png) no-repeat;
+	padding:0;
+	margin:0;
+	width: 141px;
+	height: 23px;
+	list-style-type:none;
+	height:30px;
+}
+.select_language li { float:left; }
+.select_language li a {
+	display:block;
+	color:#B8B7B8;
+	text-decoration:none;
+	font:11px 'citroenregular', Arial, Helvetica, sans-serif;
+	text-transform: uppercase;
+    padding: 4px 0 5px 14px;
+    width: 119px;
+}
+
+/* Submenu */
+.select_language ul {
+	position:absolute;
+	left:-9999px;
+	top:-9999px;
+	list-style-type:none;
+}
+.select_language li:hover { position:relative; }
+.select_language li:hover ul {
+	left:5px;
+	top:23px;
+	background:#fff;
+	padding:0px;
+}
+
+.select_language li:hover ul li a {
+	padding:7px 5px;
+	display:block;
+	width:120px;
+	text-indent:15px;
+	background-color:#fff;
+}
+.select_language li:hover ul li a:hover { background:#e5e5e5; }
+
+
+		
+
+.Header_2{
+	width: 940px;
+	height: 79px;
+	margin: 0 auto; 
+	}
+	.logo-citroen{ 
+		float: left;
+		padding-top:22px;
+		}
+	.base_line{
+		float: left;
+		padding: 41px 0 0 33px;
+		color: #756e75;
+		font-size: 30px;
+		line-height: 15px;
+		font-family: 'citroenregular', Arial, Helvetica, sans-serif;
+		font-weight: normal;
+		text-transform: uppercase;
+		}
+	.base_line span{ 
+		font-size: 18px;
+		}
+	.searchBar{ 
+		float: right;
+		}
+	.float_left{ 
+		float: left;}
+
+	#content_searchBar{
+			float: right;
+			padding-top: 34px;
+		}
+		#searchBar{
+			float:right;
+		}
+		.inputText{
+			margin: 0;
+			padding:0;
+			width: 200px;
+			height: 23px;
+			font-family: 'citroenlight', Arial, Helvetica, sans-serif;
+			font-size:29px;
+			color:#e3e3e3;
+			border: none;
+			background: none;
+    		/*padding-top: 18px;*/
+			float: right;
+			/*line-height: 0px;*/
+			padding:17px 5px 10px 0;
+            line-height: 31px;
+            outline: none;
+		}
+		.btn_searchBar {
+			float: right;
+			margin: 0;
+			height: 40px;
+			width: 40px;
+			outline: none;
+			cursor: pointer;
+			text-decoration: none;
+			color: #ffffff;
+			background: url(../images/icone_loupe.png) no-repeat center #d62c35 ;
+			border: none;
+		}
+		.btn_searchBar:hover {
+			text-decoration: none;
+			background:url(../images/icone_loupe.png) no-repeat center #b50020;
+		}
+		/* Fixes submit button height problem in Firefox */
+		.btn_searchBar::-moz-focus-inner {
+		  border: 0;
+		}
+		.clear{
+			clear:both;
+		}
+
+
+/********************************* NAVIGATION ******************************************/
+	.navigation{
+		width: 940px;
+		height: 32px;
+		margin: 21px auto 11px;
+		border-top: solid 1px #d2d0d2;
+		border-bottom: solid 1px #d62c35;
+		font-size: 14px;
+		font-family: 'citroenregular', Arial, Helvetica, sans-serif;
+		font-weight: normal;
+		}
+		.navigation ul li{
+			display: inline;
+			}
+			.navigation ul li.first{
+				margin-left: 55px;
+				}
+			
+			ul.nav-main li { /*règles générales des items de liste */
+			list-style: none;
+			margin: 0;
+			}
+			
+			ul.nav-main { /*règles des items principaux*/
+			position: relative;
+			z-index: 597;
+			}
+			
+			ul.nav-main li:hover > ul { /*apparition des sous-listes au survol de l'item principal ul*/
+			visibility: visible;
+			}
+			
+			ul.nav-main li:hover, ul.nav-main li.active  { /*design des items de liste au survol*/
+			position: relative;
+			z-index: 599;
+			cursor: pointer;
+			background: url(../images/bg_navigation.jpg) no-repeat 10px bottom;
+			}
+			ul.nav-main li:hover a{
+				color:#d62c35;
+				}
+			
+			ul.nav-main li { /*positionnement, dimensions, couleurs et textes des items de liste*/
+			float:left;
+			display:block;
+			height: 32px;
+			color: #756e75;
+			font: 14px 'citroenregular', Arial, Helvetica, sans-serif;
+			}
+			
+			ul.nav-main li a { /*positionnement, dimensions, couleurs et textes des items de liste intégrant une redirection url*/
+			display: block;
+			padding: 9px 10px 13px 9px;
+			height: 14px;
+			color: #bfbcbf;
+			font: 14px 'citroenregular', Arial, Helvetica, sans-serif;
+			text-decoration:none;
+			line-height: 13px;
+			text-transform: uppercase;
+			}
+			
+			ul.nav-main li a:hover, ul.nav-main li.active a  { /* couleurs des items de liste au survol*/
+			color:#d62c35;
+			}
+			
+			ul.nav-main *.list { /*décalage entre chaque items principaux*/
+			/*padding-right: 22px;*/
+			}
+			
+			ul.nav-sub { /*règles de la liste ul de sous menus*/
+			visibility: hidden;
+			position: absolute;
+			top: 33px;
+			left: 10px;
+			z-index: 598;
+			background: #d62c35;
+			border-bottom: 1px solid #c41a20;
+		    -moz-box-shadow:    1px 2px 3px -2px #000;
+		    -webkit-box-shadow: 1px 2px 3px -2px #000;
+		    box-shadow:         1px 2px 3px -2px #000;
+			
+			}
+			
+			ul.nav-sub li { /* regles des items de liste sous menu */
+			list-style:none;
+			display:block;
+			padding: 0;
+			height: auto;
+			float: none;
+			width:160px;
+			border-bottom: 1px solid #da4149;
+			border-right:none;
+			background: none;
+			clear: both;
+			}
+			
+			ul.nav-sub li a { /* règles des items de liste de sous menus intégrant une redirection url */
+			list-style:none;
+			color: #FFF;
+			display: table-cell;
+			padding: 8px;
+			height: 15px;
+			float: none;
+			width:160px;
+			background: none;
+			font: 11px Arial, Helvetica, sans-serif;
+			text-transform: none;
+			border-bottom: 1px solid #c41a20;
+			}
+			
+			ul.nav-sub li a:hover  {
+				color: #FFF;
+				background: #cb1f2e;}
+			
+			ul.nav-main li:hover ul.nav-sub li a{color: #FFF;}
+			
+			
+			
+/***************** SECTIONS ********************************/			
+
+#container{ 
+	width:100%;
+	height:auto;
+	display:table;
+	}
+	
+section{
+	width: 100%;
+	height: auto;
+	}
+	
+.wrapper{
+	width: 940px;
+	margin: 0 auto;
+	}
+	
+
+/*****************************************************   HOME   *****************************************************/
+
+
+
+/************* SLIDER ******************/
+#slideshow{
+	height: 330px;
+	}
+	
+.banner { position: relative; overflow: auto; width: 940px; margin: 0 auto; }
+.banner ul { padding: 0}
+.banner li { list-style: none; }
+.banner ul li { float: left; color:#000; height: 330px; width: 940px; position: relative;}
+.banner ul li span { position: absolute; right: 15px; top: 15px;}
+
+/********* ZONE DROITE SLIDER ****************/
+.banner .banner_right{
+	background: #d62c35;
+	color: #FFF;
+	width: 384px;
+	height: 330px;
+	padding: 23px 43px;
+	position: absolute;
+	right:0;
+	top:0;
+	}
+
+.banner .banner_right h1{
+	font: 48px/31px 'citroenregular', Arial, Helvetica, sans-serif;
+	color: #FFF;
+	height: 36px;
+	line-height: 
+	text-transform: uppercase;
+	}
+
+.banner .banner_right h2{
+	font: 18px/21px 'citroenregular', Arial, Helvetica, sans-serif;
+	color: #FFF;
+	text-transform: uppercase;
+	padding-top: 8px;
+	}
+
+.banner .banner_right p{
+	font: 12px Arial, Helvetica, sans-serif;
+	color: #FFF;
+	padding-top: 7px ;
+	}
+	
+.banner .banner_right .btn_learnmore{
+	color: #d62c35;
+	background: #fff;
+	text-decoration: none;
+	padding:7px 45px;
+	border-radius: 20px;
+	-moz-border-radius: 20px;
+	-webkit-border-radius: 20px;
+	-khtml-border-radius: 20px;
+	font: 14px 'citroenregular', Arial, Helvetica, sans-serif;
+	text-transform: uppercase;
+	float: left;
+	margin-top: 8px;
+	}
+	
+.banner .banner_right .btn_learnmore:hover{
+	color: #b50020;
+}
+	
+/************ PUCE SLIDER ***********/
+
+.banner .dots {
+    position: absolute;
+    right: 20px;
+    bottom: 13px;
+	height: 13px;
+}
+.banner .dots li {
+    display: inline-block;
+    width: 34px;
+    height: 8px;
+    margin: 0 4px;
+    text-indent: -999em;
+    background: #fff;
+	border: 2px solid #fff;
+    cursor: pointer;
+}
+.banner .dots li.active {
+	border: 2px solid #fff;
+	background: transparent;
+}
+
+
+
+
+
+
+
+/************* EDITO ******************/
+#edito{
+	min-height: 200px;
+	background:#fff;
+	}
+
+#edito .wrapper{
+	display: table;
+	padding-bottom: 20px;
+	}
+#edito h2{
+	background: #fafafa;
+	font: 24px 'citroenlight', Arial, Helvetica, sans-serif;
+	text-transform: uppercase;
+	padding:18px 0 0 42px;
+	width: 257px;
+	}
+
+#edito p{
+	font: 18px/23px 'citroenlight', Arial, Helvetica, sans-serif;
+	color: #2a2823;
+	padding: 11px 0 0 43px;
+	background:url(../images/guillemet_left.png) no-repeat left 8px;
+	}
+#edito .guillemet_close{
+	width: 16px;
+	height: 36px;
+	background:url(../images/guillemet_right.png) no-repeat bottom right;
+	display: inline-block;}
+
+#edito .btn_learnmore{
+	color: #d62c35;
+	background: #fafafa;
+	border: solid 1px #e5e7e9;
+	text-decoration: none;
+	padding: 7px 45px;
+	border-radius: 20px;
+	-moz-border-radius: 20px;
+	-webkit-border-radius: 20px;
+	-khtml-border-radius: 20px;
+	font: 14px 'citroenregular', Arial, Helvetica, sans-serif;
+	text-transform: uppercase;
+	float: right;
+	}
+	
+#edito .btn_learnmore:hover{
+	background: #f3f3f3;
+	}
+
+
+#MEA .wrapper .group1 {
+	margin-top: 10px;
+	display: inline-block;
+	}
+
+/************* MEA 4 COLONNE ******************/
+#MEA .wrapper .group1 .item{
+	width: 183px;
+	height: 163px;
+	background: url(../images/BG_triangle_white.png) no-repeat top center #e5e7e9;
+	padding: 34px 18px 18px;
+	float: left;
+	margin-left: 20px;
+	position: relative;
+	}
+	
+#MEA .wrapper .group1 .item.first{
+	margin-left: 0;
+	}
+	
+#MEA .wrapper .group1 .item h2{
+	font: 24px 'citroenlight', Arial, Helvetica, sans-serif;
+	text-transform: uppercase;
+	color: #d62c35;
+	text-align: center;
+	}
+
+#MEA .wrapper .group1 .item p{
+	font: 12px/18px Arial, Helvetica, sans-serif;
+	color: #302b28;
+	padding: 4px 0 17px;
+	text-align: justify;
+	}
+
+#MEA .wrapper .group1 .item .btn_learnmore{
+	color: #d62c35;
+	background: #fafafa;
+	border: solid 1px #FFFFFF;
+	text-decoration: none;
+	padding:7px 45px;
+	border-radius: 20px;
+	-moz-border-radius: 20px;
+	-webkit-border-radius: 20px;
+	-khtml-border-radius: 20px;
+	font: 14px 'citroenregular', Arial, Helvetica, sans-serif;
+	text-transform: uppercase;
+	white-space: nowrap;
+	width: 95px;
+	display: block;
+	margin: auto;
+	}
+.abs_btn_learnmore .btn_learnmore{
+	position: absolute;
+	bottom: 10px;
+}
+#MEA .wrapper .group1 .item .btn_learnmore:hover{
+	background: #fff;
+}
+
+/************* MEA 2 COLONNE ******************/
+#MEA .wrapper .group1.col_2 .item{
+	width: 422px;
+	height: 163px;
+	background: url(../images/BG_triangle_white.png) no-repeat top center #e5e7e9;
+	padding: 34px 18px 18px;
+	float: left;
+	margin-left: 20px;
+	}
+	
+#MEA .wrapper .group1.col_2 .item.first{
+	margin-left: 0;
+	}
+
+/************* MEA 2 COLONNES  ******************/
+#MEA .two-col .wrapper .group1{
+	width:940px;
+	padding-bottom: 26px;
+	}
+	#MEA .two-col .wrapper .group1 .item .icon-sous-rubrique-two-col{
+		width:424px;
+		height: 90px;
+	}
+	#MEA .two-col .wrapper .group1 .item .icon-sous-rubrique-two-col img{
+		vertical-align: bottom;
+		margin:18px 0 0 184px;
+	}
+	#MEA .two-col .wrapper .group1 .item p{
+		margin:18px 0 13px 0;
+	}
+	#MEA .two-col .wrapper .group1 .item{
+	height: 312px;
+	width:424px;
+	margin: 0;
+}
+	#MEA .two-col .wrapper .group1 .item:first-child{
+	margin-right: 20px;
+}
+#MEA .two-col .wrapper .group1 .item .icon-sous-rubrique-two-col img {
+    margin: 18px 0 0 184px;
+    vertical-align: bottom;
+}
+	/*
+#MEA .wrapper .group1 .item h2{
+	font: 24px 'citroenlight', Arial, Helvetica, sans-serif;
+	text-transform: uppercase;
+	color: #d62c35;
+	text-align: center;
+	}
+
+#MEA .wrapper .group1 .item p{
+	font: 12px/18px Arial, Helvetica, sans-serif;
+	color: #302b28;
+	padding: 4px 0 17px;
+	text-align: justify;
+	}
+
+#MEA .wrapper .group1 .item .btn_learnmore{
+	color: #d62c35;
+	background: #fafafa;
+	border: solid 1px #FFFFFF;
+	text-decoration: none;
+	padding:7px 45px;
+	border-radius: 20px;
+	-moz-border-radius: 20px;
+	-webkit-border-radius: 20px;
+	-khtml-border-radius: 20px;
+	font: 14px 'citroenregular', Arial, Helvetica, sans-serif;
+	text-transform: uppercase;
+	white-space: nowrap;
+	}
+#MEA .wrapper .group1 .item .btn_learnmore:hover{
+	background: #fff;
+}*/
+
+/************* MEA 3 COLONNES  ******************/
+#MEA .wrapper .group2 {
+	margin: 24px 0 31px 0;
+	display: inline-block;
+	}
+
+#MEA .wrapper .group2 .item{
+	width: 261px;
+	height: 145px;
+	background: #fff;
+	padding: 18px;
+	float: left;
+	margin-left: 20px;
+	border: solid 1px #edeeef;
+	}
+	
+#MEA .wrapper .group2 .item.first{
+	margin-left: 0;
+	}
+
+
+#MEA .wrapper .group2 .item h3{
+	margin-bottom: 6px;
+	}
+
+#MEA .wrapper .group2 .item h3, #MEA .wrapper .group2 .item h3{
+	font: 18px 'citroenlight', Arial, Helvetica, sans-serif;
+	text-transform: uppercase;
+	color: #756e75;
+	text-decoration: none;
+	}
+
+#MEA .wrapper .group2 .item .picture{
+	float: left;
+	}
+
+#MEA .wrapper .group2 .item p{
+	font: 12px Arial, Helvetica, sans-serif;
+	color: #756e75;
+	margin-left: 16px;
+	text-decoration: none;
+	float: left;
+	width: 125px;
+	}
+
+#MEA .wrapper .group2 .item p {
+	font: 12px/15px Arial, Helvetica, sans-serif;
+	color: #756e75;
+	text-decoration: none;
+	float: left;
+	width: 125px;
+	}
+
+
+/*************   FOOTER   ****************/
+footer{
+	width: 100%;
+	display: inline-block;
+	}
+
+.footer_1{
+	width: 100%;
+	display: inline-block;
+	background: #f5f5f5;
+	padding: 30px 0;
+	}
+
+.footer_1 .wrapper ul{
+	float: left;
+	width: 140px;
+	margin-left: 20px;
+	}
+
+.footer_1 .wrapper ul.first{
+	margin-left: 0;
+	}
+	
+.footer_1 .wrapper ul li{
+	list-style: none;
+	}
+.footer_1 .wrapper ul li a{
+	font: 11px Arial, Helvetica, sans-serif;
+	color: #bcb9bc;
+	text-decoration: none;
+	}
+.footer_1 .wrapper ul li a:hover{
+	color: #a09ca0;
+	}
+	
+.footer_1 .wrapper ul li.title a{
+	font: 14px 'citroenlight', Arial, Helvetica, sans-serif;
+	color: #bcb9bc;
+	text-decoration: none;
+	text-transform: uppercase;
+	
+	} 
+
+.footer_1 .wrapper ul li.title{
+	border-bottom: solid 1px #dbdadb;
+	margin-bottom: 14px;
+	}
+
+
+
+
+.footer_2{
+	width: 100%;
+	display: inline-block;
+	background: #f0f0f0;
+	margin-top: -4px;
+	padding: 12px 0 30px 0;
+	}
+	
+	
+.footer_2 .wrapper ul{
+	text-align: center;
+	
+	}
+
+.footer_2 .wrapper ul li{
+	list-style: none;
+	display: inline-block;
+	}
+.footer_2 .wrapper ul li a{
+	font: 11px Arial, Helvetica, sans-serif;
+	color: #bcb9bc;
+	text-decoration: none;
+	}
+
+.footer_2 .wrapper ul li a:hover{
+	color: #a09ca0;
+	}
+
+.footer_2 .wrapper a.logo_footer{
+	float:right;
+	}
+
+
+
+
+
+
+/*****************************************************   FAQ   *****************************************************/
+
+
+#file_dariane .wrapper ul.fil_dariane {
+	list-style: none;
+	}
+
+#file_dariane .wrapper ul.fil_dariane li{
+	display: inline-block;
+	font: 11px Arial, Helvetica, sans-serif;
+	color: #756e75;
+	}
+	
+#file_dariane .wrapper ul.fil_dariane li a{
+	font: 11px Arial, Helvetica, sans-serif;
+	color: #bfbcbf;
+	text-decoration: none;
+	}
+
+
+/******* BANNER 1 COL ***********/
+#banner_1col{
+	margin-top: 10px;
+	}
+	
+#banner_1col .wrapper .banner_img {
+	width: 940px;
+	position: relative;
+	}
+
+#banner_1col .wrapper .banner_img h1{
+	position: absolute;
+	text-align: center;
+	font: 48px 'citroenregular', Arial, Helvetica, sans-serif;
+	text-transform: uppercase;
+	color: #fff;
+	top: 52%;
+	width: 940px;
+	}
+
+
+#banner_1col .wrapper .banner_img h2{
+	position: absolute;
+	font: 18px 'citroenregular', Arial, Helvetica, sans-serif;
+	text-transform: uppercase;
+	color: #fff;
+	text-align: center;
+	width: 940px;
+	top: 60%;
+	}
+
+	
+#banner_1col .wrapper .banner_img p{
+	color: #FFFFFF;
+    font: 12px Arial,Helvetica,sans-serif;
+    padding: 0 20px;
+    position: absolute;
+    text-align: center;
+    top: 74%;
+	}
+
+/******* NAVIGATION THEME ***********/
+#nav_theme .wrapper{
+	padding-right: 20px;
+    width: 960px;
+	display: table;
+	}
+#nav_theme .wrapper a{
+	display: block;
+	float: left;
+	font: 18px 'citroenregular', Arial, Helvetica, sans-serif;
+	text-decoration: none;
+	color: #cbc8cb;
+	border: solid 2px #cbc8cb;
+	border-radius: 5px;
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+	-khtml-border-radius: 5px;
+	padding: 10px 34px;
+	margin: 10px 0 0 20px; 
+	}
+#nav_theme .wrapper a:hover{
+	color: #b3afb2;
+	border: solid 2px #b3afb2;
+	}
+	
+#nav_theme .wrapper a.active{
+	color: #d62c35;
+	border: solid 2px #d62c35;
+	}
+	
+#nav_theme .wrapper  .btn_theme{
+		list-style: none;}
+		
+#nav_theme .wrapper a.first{
+	margin-left: 0;
+	}
+
+/******* FAQ ACCORDION ***********/
+#faq .wrapper {
+	background: #FFF;
+	margin: 20px auto 10px;
+	padding: 20px 15px 60px 15px;
+	width: 910px;
+	position: relative;
+	}
+	
+#faq .wrapper h2{
+	font: 48px 'citroenlight', Arial, Helvetica, sans-serif;
+	text-transform: uppercase;
+	color: #191919;
+	padding: 30px 0 17px;
+	}
+
+#faq .wrapper h2.first{
+	padding-top: 0;
+	}
+	
+.accordion h3 {
+	padding: 10px;
+	font: 18px 'citroenregular', Arial, Helvetica, sans-serif;
+	text-transform: uppercase;
+	}
+.accordion div p {}
+
+
+
+
+ul.btn_txt{
+	position: absolute;
+	right: 0;
+	top: 0;
+	margin: 1px;
+	list-style: none;
+	display: inline-block;
+	width: 94px;
+	height: 28px;
+	}
+
+ul.btn_txt li a.btn_a_more{
+	font-family: 'citroenregular',Arial,Helvetica,sans-serif;
+    line-height: 26px;
+    text-align: center;
+	color: #C6C4C6;
+	text-decoration: none;
+	width: 26px;
+	height: 26px;
+	border: solid 1px #e5e7e9;
+	display: block;
+	float: right;
+	margin-right: 2px;
+	}
+	
+ul.btn_txt li a.btn_a_less{
+	font-family: 'citroenregular',Arial,Helvetica,sans-serif;
+    line-height: 26px;
+    text-align: center;
+	text-decoration: none;
+	color: #C6C4C6;
+	width: 26px;
+	height: 26px;
+	border: solid 1px #e5e7e9;
+	display: block;
+	float: right;
+	margin-right: 2px;
+	}
+	
+ul.btn_txt li a.btn_print{
+	background:url(../images/icon_print.png) no-repeat center #fafafa;
+	width: 26px;
+	height: 26px;
+	display: block;
+	float: right;
+	}
+
+
+
+/***************************************** PAGE ARTICLE ************************************************************/
+/********** 3 COLONNES ********/
+
+#Article_3_col .wrapper{
+	padding-top:10px;
+	}
+
+/** NAV LEFT **/
+#Article_3_col .wrapper nav.nav_rubrique{
+	width: 220px;
+	display: block;
+	float: left;
+	padding-top: 20px;
+	}
+
+#Article_3_col .wrapper  nav.nav_rubrique h2{
+	background: #756e75;
+	font: 18px 'citroenlight', Arial, Helvetica, sans-serif;
+	text-transform: uppercase;
+	color: #fafafa;
+	display:block;
+	padding: 13px 0 3px 20px;
+	}
+
+#Article_3_col .wrapper  nav.nav_rubrique ul{
+	list-style: none;
+	background: #e5e7e9;
+	}
+
+#Article_3_col .wrapper  nav.nav_rubrique ul li{
+	border-bottom: solid 1px #fcfdfd;
+	}
+#Article_3_col .wrapper  nav.nav_rubrique ul li a{
+	text-decoration: none;
+	font: 14px 'citroenlight', Arial, Helvetica, sans-serif;
+	text-transform: uppercase;
+	color: #756e75;
+	display: block;
+	padding: 10px 0 10px 20px;
+	border-bottom: solid 1px #cecfd1;
+	}
+
+
+/** SUB NAV**/
+#Article_3_col .wrapper  nav.nav_rubrique ul li.niveau_2{
+	background: #FFF;
+	}
+#Article_3_col .wrapper  nav.nav_rubrique ul li.niveau_2 a{
+	border: none;
+	}
+#Article_3_col .wrapper  nav.nav_rubrique .active{
+	color: #d62c35;
+	cursor: default;
+	padding-bottom: 5px;
+	}
+	#Article_3_col .wrapper  nav.nav_rubrique ul.subnav{
+		background: #FFF;
+		border-bottom: solid 1px #cecfd1;
+		padding-bottom: 20px;
+		}
+	#Article_3_col .wrapper  nav.nav_rubrique ul.subnav li{
+		border: none;
+		}
+	#Article_3_col .wrapper  nav.nav_rubrique ul.subnav li a{
+		text-decoration: none;
+		text-transform: none;
+		border: none;
+		padding: 3px 0 3px 40px;
+		}
+
+
+
+/** MODE 3 COLONNE - COLONNE CENTER **/
+
+#Article_3_col .col_center{
+	position: relative;
+	width: 560px;
+	padding: 20px;
+	box-sizing: border-box;
+	background: #FFF;
+	float: left;
+	margin-bottom: 40px;
+	}
+	
+section.col_center article span{
+	color: #c1bfc1;
+	font-size: 12px;
+	}
+	
+section.col_center article h1{
+	font: 48px 'citroenlight', Arial, Helvetica, sans-serif;
+	text-transform: uppercase;
+	color: #191919;
+	}
+	
+section.col_center article h2{
+	font: 18px 'citroenbold', Arial, Helvetica, sans-serif;
+	text-transform: uppercase;
+	color: #191919;
+	padding-bottom: 7px;
+	}
+	
+section.col_center article h2.red{
+	color: #d62c35;
+	}
+	
+section.col_center article p.intro{
+	font: 18px 'citroenregular', Arial, Helvetica, sans-serif;
+	color: #191919;
+	padding: 10px 0 30px 0;
+	}
+section.col_center article p{
+	font: 12px Arial, Helvetica, sans-serif;
+	color: #756e75;
+	display: inline-block;
+	padding-bottom: 15px;
+	}
+section.col_center article p img{
+	float: left;
+	padding-right: 10px;}                        	
+
+
+
+/*******    COLONNE DE DROITE  *************/
+
+#Article_3_col aside{
+	width: 140px;
+	float: right;
+	}
+#Article_3_col aside div{
+	width: 140px;
+	background: #e4dbc9;
+	box-sizing: border-box;
+	padding: 10px 10px 20px 10px;
+	margin-top: 20px;
+	}
+#Article_3_col aside div.bg_gray{
+	background: #756e75;
+	}
+#Article_3_col aside div.bg_gray h3{
+	font: 18px 'citroenregular', Arial, Helvetica, sans-serif;
+	text-transform: uppercase;
+	color: #fafafa;
+	}
+#Article_3_col aside div h3{
+	font: 18px 'citroenregular', Arial, Helvetica, sans-serif;
+	text-transform: uppercase;
+	color: #191919;
+	} 
+#Article_3_col aside div p{
+	font: 12px Arial, Helvetica, sans-serif;
+	color: #756e75;
+	padding-top: 15px;
+	
+	}
+#Article_3_col aside div.bg_gray ul{
+	list-style: none;
+	padding: 16px 0;
+	}
+#Article_3_col aside div.bg_gray ul li a{
+	font: 12px Arial, Helvetica, sans-serif;
+	text-decoration: none;
+	color: #fafafa;
+	}
+                        	
+							
+/***************************************** BLOG ARTICLE ************************************************************/
+/********** 2 COLONNES ********/
+
+#Article_2_col .wrapper{
+	padding-top:10px;
+	}					
+							
+							
+/********** COLONNES  LEFT ********/
+#Article_2_col .col_left{
+	position: relative;
+	width: 700px;
+	float: left;
+	margin-bottom: 40px;
+	}
+#Article_2_col .col_left article{
+	padding: 50px 20px;
+	box-sizing: border-box;
+	background: #FFF;
+	position: relative;
+	width: 700px;
+	float: left;
+	margin-bottom: 30px;
+	}
+section.col_left article .btn_back_blog{
+	color: #b8b7b8;
+	background: #fafafa;
+	border: solid 1px #f2f2f2;
+	text-decoration: none;
+	padding: 7px 45px;
+	border-radius: 20px;
+	-moz-border-radius: 20px;
+	-webkit-border-radius: 20px;
+	-khtml-border-radius: 20px;
+	font: 11px 'citroenregular', Arial, Helvetica, sans-serif;
+	text-transform: uppercase;
+	}
+section.col_left article .btn_back_blog:hover{
+	background: #f3f3f3;
+	}
+section.col_left article .btn_back_blog.position_top{
+	position: absolute;
+	left: 40%;
+	top: 6px;
+	}
+	
+section.col_left article .btn_back_blog.position_bottom{
+	position: absolute;
+	left: 40%;
+	bottom: 11px;
+	}
+.lien_red{
+	color:#d62c35;
+	text-decoration: underline;
+	}
+	
+section.col_left article span{
+	display: block;
+	padding-bottom: 20px;
+	color: #c1bfc1;
+	font-size: 12px;
+	}
+	
+section.col_left article h1{
+	font: 48px 'citroenlight', Arial, Helvetica, sans-serif;
+	text-transform: uppercase;
+	color: #191919;
+	}
+	
+section.col_left article h2{
+	font: 18px 'citroenbold', Arial, Helvetica, sans-serif;
+	text-transform: uppercase;
+	color: #191919;
+	padding-bottom: 7px;
+	}
+	
+section.col_left article h2.red{
+	color: #d62c35;
+	}
+	
+section.col_left article p.intro{
+	font: 18px 'citroenregular', Arial, Helvetica, sans-serif;
+	color: #191919;
+	padding: 10px 0 30px 0;
+	}
+section.col_left article p{
+	font: 12px Arial, Helvetica, sans-serif;
+	color: #756e75;
+	display: inline-block;
+	padding-bottom: 0;
+	}
+section.col_left article p img{
+	float: left;
+	padding-right: 10px;}   					
+							
+
+
+
+/********************** ZONE COMMENT *************************/
+section.col_left .content_comment{
+	display: inline-block;
+	width: 700px;
+	}
+	section.col_left .content_comment .header_comment{
+		height: 40px;
+		width: 700px;
+		padding: 7px 0 7px 20px;
+		border-top: solid 1px #cdcdcd;
+		border-bottom: solid 1px #cdcdcd;
+		box-sizing: border-box;
+		}
+		section.col_left .content_comment .header_comment h3{
+			font: 18px 'citroenregular', Arial, Helvetica, sans-serif;
+			text-transform: uppercase;
+			color: #191919;
+			float: left;
+			}
+		section.col_left .content_comment .header_comment .btn_all_comment{
+			background:url(../images/icon_comment.png) no-repeat left center;
+			font: 14px 'citroenregular', Arial, Helvetica, sans-serif;
+			text-transform: uppercase;
+			color: #a4a4a4;
+			float: right;
+			text-decoration: none;
+			padding: 4px 0 4px 32px;
+			}
+		
+	section.col_left .content_comment .info_doc{
+		display: inline-block;
+		font: 14px Arial, Helvetica, sans-serif;
+		color: #191919;
+		padding: 16px 0 20px 20px;
+		}
+	
+	section.col_left .content_comment .zone_textarea{
+		display: inline-block;
+		width: 100%;
+		
+		}
+		section.col_left .content_comment .zone_textarea .avatar_user{
+			width: 140px;
+			height: 140px;
+			border-radius: 50%;
+			float: left;
+			}
+			section.col_left .content_comment .zone_textarea .avatar_user img{
+			width: 140px;
+			height: 140px;
+			border-radius: 50%;
+			border: solid 1px #b0b0b0;
+			}
+		/***************** BLOG TEXTAREA ********/
+
+		.clear{clear:both;}
+		textarea{
+			font: 27px 'citroenlight', Arial, Helvetica, sans-serif;
+			text-transform: uppercase;
+			color: #a6a6a6;
+			float:left;
+			resize:none;
+			margin: 0;
+			border:none;
+			outline: none;
+			width: 100%;
+			}
+
+		#special-submit{margin: 0;padding: 0;float:right;border: none;outline: none;width:410px;display: none}
+		
+		#special-submit input{
+			cursor: pointer;
+			background: #d62c35;
+			border: none;
+			display: block;
+			font: 11px 'citroenregular', Arial, Helvetica, sans-serif;
+			color: #fff;
+			text-decoration: none;
+			text-transform: uppercase;
+			text-align: center;
+			margin-top: 7px ;
+			padding:5px 37px;
+			float: right;
+			border-radius: 20px;
+			-moz-border-radius: 20px;
+			-webkit-border-radius: 20px;
+			-khtml-border-radius: 20px;
+			}						
+		#special-submit input:hover{
+			background: #b50020;
+			}
+				
+		section.col_left .content_comment .zone_textarea .textarea_comment{
+			width: 700px;
+			padding: 15px 20px;
+			background: #FFF;
+			float: right;
+			border: solid 1px #efefef;
+			border-radius: 3px;
+			font: 39px 'citroenlight', Arial, Helvetica, sans-serif;
+			text-transform: uppercase;
+			color: #a4a4a4;
+			box-sizing: border-box;
+			text-decoration: none;
+			line-height: 28px;
+			-moz-box-shadow: inset 1px 1px 3px 0px #c0c0c0;
+			-webkit-box-shadow: inset 1px 1px 3px 0px #c0c0c0;
+			-o-box-shadow: inset 1px 1px 3px 0px #c0c0c0;
+			box-shadow: inset 1px 1px 3px 0px #c0c0c0;
+			filter:progid:DXImageTransform.Microsoft.Shadow(color=#c0c0c0, Direction=134, Strength=3);
+			}
+			
+	
+	section.col_left .content_comment .zone_comment{
+		display: inline-block;
+		width: 100%;
+		margin-top: 17px;
+		}
+		section.col_left .content_comment .zone_comment .comment_niveau_1{
+			display: inline-block;
+			width: 100%;
+			float: right;
+			}
+		section.col_left .content_comment .zone_comment .comment_niveau_2{
+			display: inline-block;
+			width: 90%;
+			float: right;
+			}		
+			section.col_left .content_comment .zone_comment .head_comment{
+				height: 48px;
+				}
+				section.col_left .content_comment .zone_comment .head_comment .avatar_user{
+					padding-left: 10px;
+					width: 40px;
+				    height: 40px;
+					float: left;
+					}
+				section.col_left .content_comment .zone_comment .head_comment .avatar_user img{
+				width: 40px;
+				height: 40px;
+				border-radius: 50%;
+				border: solid 1px #b0b0b0;
+					}	
+				section.col_left .content_comment .zone_comment .head_comment .info_user{
+					font: 11px Arial, Helvetica, sans-serif ;
+					font-style: italic;
+					color: #c2c2c2;
+					float: left;
+					padding-left: 20px;
+					padding-top: 27px;
+					}
+			section.col_left .content_comment .zone_comment .bloc_commentaire{
+				position: relative;
+				background: #FFF;
+				border: solid 1px #efefef;
+				font: 12px Arial, Helvetica, sans-serif;
+				color: #b0b0b0;
+				padding: 16px 19px;
+				margin-top: 10px;
+				}
+			section.col_left .content_comment .zone_comment .bloc_commentaire .bg_bubble{
+				display: block;
+				position: absolute;
+				top: -9px;
+				left: 20px;
+				background: url(../images/bg_bubble_top.png) no-repeat;
+				width: 20px;
+				height: 10px;
+				}
+			section.col_left .content_comment .zone_comment .btn_answer{
+				background: #fff;
+				border: solid 1px #efeeef;
+				display: block;
+				font: 11px 'citroenregular', Arial, Helvetica, sans-serif;
+				color: #d62c35;
+				text-decoration: none;
+				text-transform: uppercase;
+				text-align: center;
+				margin-top: 7px ;
+				padding:5px 37px;
+				float: right;
+				border-radius: 20px;
+				-moz-border-radius: 20px;
+				-webkit-border-radius: 20px;
+				-khtml-border-radius: 20px;
+				}	
+		
+
+/******* COLONNE DE DROITE  *************/
+
+#Article_2_col aside{
+	width: 220px;
+	float: right;
+	}
+#Article_2_col aside .actu{
+	background: url(../images/aside_bg_top.png) no-repeat; 
+	width: 220px;
+	margin-bottom: 17px;
+	border-bottom: solid 1px #ffffff;
+	}
+/* double border */	
+#Article_2_col aside .actu .item.last{
+	border-bottom: solid 1px #e3e3e3;
+	}
+	
+#Article_2_col aside .actu h3{
+	background:url(../images/aside_arrow.png) no-repeat right 14px;
+	padding: 10px 0 20px 0;
+	} 
+#Article_2_col aside .actu h3:hover{
+	-ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=50)";
+	filter: alpha(opacity=50);
+	-moz-opacity:0.5;
+	-khtml-opacity: 0.5;
+	opacity: 0.5;
+	
+	}
+
+
+#Article_2_col aside .actu h3 a{
+	text-decoration: none;
+	border: none;
+	font: 18px 'citroenregular', Arial, Helvetica, sans-serif;
+	text-transform: uppercase;
+	color: #191919;
+	
+	}
+
+
+#Article_2_col aside .actu .item{
+	width: 220px;
+	padding-bottom: 20px;
+	display: table;
+	}
+
+	#Article_2_col aside .actu .item a{
+		text-decoration: none;
+		border: none;
+		}                         
+	#Article_2_col aside .actu .item a img{
+		float: left;
+		margin-right: 20px;
+		}
+		
+	#Article_2_col aside .actu .item a p{
+		font: 14px 'citroenregular', Arial, Helvetica, sans-serif;
+		text-transform: uppercase;
+		color: #666666;
+		width: 140px;
+		float:left;
+		clear: right;
+		}
+		
+	#Article_2_col aside .actu .item a:hover p{
+		color: #272727;
+		}
+	
+	#Article_2_col aside .actu .item a span{
+		padding-top: 7px;
+		font: 12px Arial, Helvetica, sans-serif;
+		color:#c2c2c2;
+		width: 140px;
+		float:left;
+		clear: right;
+		}                                
+							
+
+#Article_2_col aside .bloc_red{
+	background: #d62c35;
+	width: 220px;
+	box-sizing: border-box;
+	padding: 20px 20px 12px 20px;
+	display: table;
+	margin-bottom: 20px;
+	}
+#Article_2_col aside .bloc_red h3{
+	font: 24px 'citroenlight', Arial, Helvetica, sans-serif;
+	text-transform: uppercase;
+	color: #f3dcdc;
+	}
+#Article_2_col aside .bloc_red p{
+	font: 12px Arial, Helvetica, sans-serif;
+	color: #f3dcdc;
+	padding: 15px 0 20px 0;
+	}
+	
+#Article_2_col aside .bloc_red .btn_learnmore{
+	display: block;
+	width: 78px;
+	margin: 0 auto;
+	color: #d62c35;
+	background: #fff;
+	text-decoration: none;
+	padding:7px 45px;
+	border-radius: 20px;
+	-moz-border-radius: 20px;
+	-webkit-border-radius: 20px;
+	-khtml-border-radius: 20px;
+	font: 11px 'citroenregular', Arial, Helvetica, sans-serif;
+	text-transform: uppercase;
+	}						
+
+
+/******************************  BLOG   **********************************************************************************************/
+
+/*** banner *****/
+#banner_1col .wrapper .banner_img.blog h1{
+	top: 167px;
+	}
+#banner_1col .wrapper .banner_img.blog h2{
+	top: 222px;
+	}
+#banner_1col .wrapper .banner_img.blog p{
+	top: 253px;
+	}
+	
+#banner_1col .wrapper .banner_img.blog .btn_learnmore{
+	color: #d62c35;
+	background: #fff;
+	text-decoration: none;
+	padding:7px 45px;
+	border-radius: 20px;
+	-moz-border-radius: 20px;
+	-webkit-border-radius: 20px;
+	-khtml-border-radius: 20px;
+	font: 14px 'citroenregular', Arial, Helvetica, sans-serif;
+	text-transform: uppercase;
+	}
+	
+#banner_1col .wrapper .banner_img.blog .banner .banner_right .btn_learnmore:hover{
+	color: #b50020;
+}
+
+
+
+#Article_2_col .col_left .article_pagination{
+	padding-bottom: 10px;}
+
+.col_left article hr {
+  margin: 10px 0;
+  color: #e9e9e9;
+  border-top: 1px solid #e9e9e9;
+  border-left: 1px solid #e9e9e9;
+}
+.col_left article hr.dotted {
+  margin: 0;
+  margin-top: -2px;
+  border: none;
+  border-bottom: dashed 1px #e9e9e9;
+  
+}
+
+
+.col_left #champs{
+	position: absolute ;
+	top: 3px;
+	
+	}
+	
+.col_left #champs .select {
+  display: inline-block;
+  height: 28px;
+  border: 1px solid #e5e7e9;
+}
+
+.col_left #champs select {
+  display: inline-block;
+  border: 0;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  background: url(../images/fleche-bas-select.png) no-repeat 95% center;
+  width: 140px;
+  text-indent: 0.01px;
+  text-overflow: "";
+  color: #b8b7b8;
+  padding: 5px;
+}
+
+.col_left #champs label.first {
+	padding: 0;
+	padding-right: 12px;
+	}
+.col_left #champs label {
+  display: inline-block;
+  text-transform: uppercase;
+  font-size: 11px;
+  font-family: 'citroenregular', Arial, Helvetica, sans-serif;
+  color: #b8b7b8;
+  line-height: 30px;
+  vertical-align: middle;
+  padding: 0 20px;
+}
+
+.col_left #champs option {
+  margin-bottom: 7px;
+  line-height: 18px;
+  padding-bottom: 5px;
+  padding-left: 5px;
+}
+
+.col_left article .actu {
+  padding: 10px 0 17px 0;
+  border-bottom: solid 1px #e9e9e9;
+  display: inline-block;
+}
+
+.col_left article .actu img {
+  float: left;
+  margin-right: 10px;
+}
+
+.col_left article .actu h2 {
+  display: inline-block;
+  color: #191919;
+  text-transform: uppercase;
+  font-weight: normal;
+  font-family: 'citroenregular', Arial, Helvetica, sans-serif;
+  font-size: 28px;
+  line-height: 18px;
+}
+
+.col_left article .actu .date {
+  color: #C1BFC1;
+    display: block;
+    font-size: 12px;
+    padding-bottom: 0;
+}
+
+.col_left article .actu p {
+  margin-top: 18px;
+  font-size: 12px;
+  line-height: 18px;
+  font-family: Arial, Helvetica, sans-serif;
+  color: #756e75;
+}
+
+.col_left article .actu .btn_learnmore{
+	background: #fff;
+	border: solid 1px #efeeef;
+	display: block;
+	font: 11px 'citroenregular', Arial, Helvetica, sans-serif;
+	color: #d62c35;
+	text-decoration: none;
+	text-transform: uppercase;
+	text-align: center;
+	margin-top: 7px ;
+	padding:5px 37px;
+	float: right;
+	border-radius: 20px;
+	-moz-border-radius: 20px;
+	-webkit-border-radius: 20px;
+	-khtml-border-radius: 20px;
+	}	
+
+.col_left article #pagination {
+  width: 420px;
+  margin: 0 auto;
+  padding: 7px 0 15px 0;
+}
+
+.col_left article #pagination span{
+	float: left;
+	padding-top: 16px;
+	padding-bottom: 0;
+	}
+	
+.col_left article #pagination a {
+  display: inline-block;
+  margin: 0 10px;
+  text-transform: capitalize;
+  color: #756e75;
+  text-decoration: none;
+  font-size: 14px;
+  font-family: 'citroenregular', Arial, Helvetica, sans-serif;
+}
+
+.col_left article #pagination .active a {
+  color: #d62c35;
+}
+
+.col_left article  #pagination .btn {
+  margin: 5px 0;
+  display: inline-block;
+  border: 2px solid #756e75;
+  padding: 7px 26px;
+  border-radius: 5px;
+}
+
+.col_left article #pagination .btn a {
+  font-size: 16px;
+}							
+
+
+
+
+
+/****************************************************************** Partie 2 ******************************************************************************************************************/
+
+
+
+/* ---------------------ALL---------------------------------- */
+.clear-both {
+  clear: both;
+}
+
+a {
+  color: #fafafa;
+  text-decoration: none;
+}
+
+.height10 {
+  height: 10px;
+}
+/* ---------------------FIL D'ARIANE------------------- */
+
+#file_dariane .wrapper ul.fil_dariane {
+  list-style: none;
+}
+
+#file_dariane .wrapper ul.fil_dariane li {
+  display: inline-block;
+  font: 11px Arial, Helvetica, sans-serif;
+  color: #756e75;
+}
+
+#file_dariane .wrapper ul.fil_dariane li a {
+  font: 11px Arial, Helvetica, sans-serif;
+  color: #bfbcbf;
+  text-decoration: none;
+}
+/* ---------------------PAGE LOGIN--------------------------- */
+
+#login {
+  margin-top: 60px;
+  background: #d62c35;
+  padding: 20px 0 15px 0;
+  font-size: 18px;
+  margin-bottom: 120px;
+}
+
+#login .seperator {
+  color: white;
+  display: inline-block;
+  line-height: 12px;
+  font-size: 12px;
+}
+
+#login h1 {
+  text-transform: uppercase;
+  color: white;
+  font-size: 44px;
+  font-family: 'citroenregular', Arial, Helvetica, sans-serif;
+  font-weight: normal;
+  line-height: 36px;
+  margin-bottom: 10px;
+}
+
+#login label {
+  margin: 10px 0 3px 0;
+  margin-top: 15px;
+  text-transform: uppercase;
+  color: white;
+  display: inline-block;
+  font-size: 1em;
+  font-family: 'citroenregular', Arial, Helvetica, sans-serif;
+  font-weight: normal;
+}
+
+#login input[type=submit] {
+  border: none;
+  display: block;
+  text-align: center;
+  margin: 0 auto;
+  margin-top: 30px;
+  color: #d62c35;
+  background: #fff;
+  text-decoration: none;
+  padding: 5px 45px;
+  text-transform: uppercase;
+  border-radius: 20px;
+  font-size: 14px;
+  font-family: 'citroenregular', Arial, Helvetica, sans-serif;
+  font-weight: normal;
+}
+
+#login input[type=submit]:hover {
+  color: #b50020;
+}
+
+#login input[type=text],
+#login input[type=password] {
+  width: 325px;
+  border: none;
+  height: 28px;
+  line-height: 26px;
+  padding: 2px 5px;
+}
+
+#login ul {
+  margin-top: 15px;
+}
+
+#login ul li {
+  list-style: none;
+  display: inline-block;
+  padding: 5px 0;
+  font-size: 16px;
+}
+
+#login ul li:first-child {
+  padding-right: 8px;
+}
+
+#login ul li:last-child {
+  position: relative;
+  left: -3px;
+  padding-left: 8px;
+}
+
+#login ul li a {
+  text-decoration: none;
+  color: white;
+  text-decoration: underline;
+  font-size: 1em;
+  font-family: 'citroenregular', Arial, Helvetica, sans-serif;
+  font-weight: normal;
+}
+
+#login .center- {
+  width: 325px;
+  margin: 0 auto;
+}
+/* ---------------------SLIDER RUBRIQUE ET DOCUMENTAIRE----------------------- */
+
+#rubrique .slider,
+#documentaire .slider {
+  height: 367px;
+  background: blue;
+  width: 940px;
+  background: url(../images_administrable/banner-rubrique.jpg) no-repeat center;
+  position: relative;
+  margin: 5px 0 10px 0;
+}
+#documentaire .slider {
+  background: url(../images_administrable/banner-documentaire.jpg) no-repeat center;
+}
+
+#rubrique .slider .texte,
+#documentaire .slider .texte {
+  position: absolute;
+  bottom: 0;
+  margin: 10px 0 20px 15px;
+  color: #fafafa;
+  font-size: 12px;
+  font-family: 'citroenlight', Arial, Helvetica, sans-serif;
+  font-weight: normal;
+}
+
+#rubrique .slider .texte h1,
+#documentaire .slider .texte h1 {
+  font-size: 48px;
+  line-height: 45px;
+  text-transform: uppercase;
+  font-family: 'citroenregular', Arial, Helvetica, sans-serif;
+}
+
+#rubrique .slider .texte h3,
+#documentaire .slider .texte h3 {
+  font-size: 18px;
+  font-family: 'citroenlight', Arial, Helvetica, sans-serif;
+  line-height: 22px;
+  margin-bottom: 5px;
+  text-transform: uppercase;
+}
+
+#rubrique .slider .texte p,
+#documentaire .slider .texte p {
+  font-size: 12px;
+  line-height: 15px;
+  width: 541px;
+  font-weight: bold;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+#rubrique .slider .sous-rubrique,
+#documentaire .slider .sous-rubrique {
+  position: relative;
+  top: 190px;
+  left: 640px;
+  height: 180px;
+  width: 280px;
+  padding: 10px;
+  color: #fafafa;
+}
+
+#rubrique .slider .sous-rubrique hr,
+#documentaire .slider .sous-rubrique hr {
+  margin: 6px 0;
+  border-bottom: 1px solid #CE3D42;
+  border-top: 1px solid #a7161b;
+  border-left: 1px solid #a7161b;
+  border-right: 1px solid #a7161b;
+}
+
+#rubrique .slider .sous-rubrique ul,
+#documentaire .slider .sous-rubrique ul {
+  width: 280px;
+}
+
+#rubrique .slider .sous-rubrique ul li,
+#documentaire .slider .sous-rubrique ul li {
+  width: 300px -20px;
+  list-style: none;
+  font-size: 14px;
+  font-family: 'citroenregular', Arial, Helvetica, sans-serif;
+}
+
+#rubrique .slider .sous-rubrique ul li:before,
+#documentaire .slider .sous-rubrique ul li:before {
+  content: "> ";
+}
+
+/* ---------------------MEA RUBRIQUE ET DOCUMENTAIRE-------- */
+
+#rubrique #MEA,
+#documentaire #MEA {
+  margin-bottom: 20px;
+}
+
+#rubrique #MEA .icon-sous-rubrique,
+#documentaire #MEA .icon-sous-rubrique {
+  height: 62px;
+  width: 62px;
+  margin: 20px 0 20px 60px;
+}
+
+#rubrique #MEA .icon-sous-rubrique img,
+#documentaire #MEA .icon-sous-rubrique img {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+#rubrique #MEA .item,
+#documentaire #MEA .item {
+  height: 260px;
+}
+
+#rubrique #MEA .item h2,
+#documentaire #MEA .item h2 {
+  margin-top: -5px;
+}
+
+#rubrique #MEA .item a,
+#documentaire #MEA .item a {
+  padding: 5px 45px;
+}
+
+#rubrique #MEA .btn_learnmore,
+#documentaire #MEA .btn_learnmore {
+  background: #f0f0f0;
+}
+
+/* ---------------------PAGE DOCUMENTAIRE-------------------- */
+
+
+
+#documentaire #MEA .item {
+  height: 195px;
+}
+
+#documentaire p {
+  margin: 4px 0;
+}
+
+/* ---------------------PAGE RESULTATS RECHERCHE------------ */
+
+
+#recherche #file_dariane {
+  margin-top: -3px;
+  margin-bottom: 7px;
+}
+
+#recherche hr {
+  margin: 10px 0;
+  color: #e9e9e9;
+  border-top: 1px solid #e9e9e9;
+  border-left: 1px solid #e9e9e9;
+}
+
+#recherche .block-recherche {
+  background: #d62c35;
+  height: 120px;
+  margin-bottom: 18px;
+  position: relative;
+}
+
+#recherche .block-recherche h5 {
+  font-size: 14px;
+  text-align: center;
+  font-weight: normal;
+  color: #f3dbdb;
+  padding: 20px 0 10px 0;
+}
+
+#recherche .block-recherche input[type=text] {
+  border: 1px solid #c72831;
+  border-right: 0;
+  display: block;
+  float: left;
+  width: 479px;
+  height: 41px;
+  padding: 0 5px;
+  font-size: 16px;
+}
+
+#recherche .block-recherche input[type=submit] {
+  display: block;
+  float: left;
+  border: 1px solid #c72831;
+  border-left: 0;
+  font-size: 16px;
+  height: 43px;
+  width: 61px;
+  outline: none;
+  cursor: pointer;
+  text-decoration: none;
+  background: url(../images/icone-loupe-rechercher.png) no-repeat center white;
+}
+
+#recherche .content {
+  width: 910px;
+  background: white;
+  position: relative;
+  padding: 15px;
+  margin-bottom: 30px;
+}
+
+#recherche .content .icones-right ul {
+  position: absolute;
+  right: 1px;
+  top: 1px;
+}
+
+#recherche .content .icones-right ul li {
+  float: right;
+  margin: 1px;
+  list-style: none;
+  display: inline-block;
+  width: 32px;
+  height: 30px;
+  line-height: 26px;
+  vertical-align: -3px;
+  border: 1px solid #e5e7e9;
+  text-align: center;
+  font-family: 'citroenregular', Arial, Helvetica, sans-serif;
+}
+
+#recherche .content .icones-right ul li a {
+  color: #c6c4c6;
+  text-decoration: none;
+  display: inline-block;
+  height: 30px;
+  width: 32px;
+}
+
+#recherche .content .icones-right ul li a img {
+  display: inline;
+}
+
+#recherche #resultat {
+  float: left;
+  text-transform: uppercase;
+  padding: 0px;
+  font-family: 'citroenregular', Arial, Helvetica, sans-serif;
+}
+
+#recherche #resultat h3 {
+  display: inline-block;
+  font-size: 18px;
+  color: #191919;
+}
+
+#recherche #resultat .resultats {
+  font-size: 14px;
+  color: #c2c2c2;
+}
+
+#recherche #champs .select {
+  display: inline-block;
+  height: 28px;
+  border: 1px solid #e5e7e9;
+}
+
+#recherche #champs select {
+  display: inline-block;
+  border: 0;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  background: url(../images/fleche-bas-select.png) no-repeat 95% center;
+  width: 140px;
+  text-indent: 0.01px;
+  text-overflow: "";
+  color: #b8b7b8;
+  padding: 5px;
+}
+
+#recherche #champs label {
+  display: inline-block;
+  text-transform: uppercase;
+  font-size: 11px;
+  font-family: 'citroenregular', Arial, Helvetica, sans-serif;
+  color: #b8b7b8;
+  line-height: 30px;
+  vertical-align: middle;
+  padding: 0 20px;
+}
+
+#recherche #champs option {
+  margin-bottom: 7px;
+  line-height: 18px;
+  padding-bottom: 5px;
+  padding-left: 5px;
+}
+
+#recherche .bloc_resultat {
+  padding: 5px 0 0 0;
+}
+
+#recherche .bloc_resultat img {
+  float: left;
+  margin-right: 10px;
+}
+
+#recherche .bloc_resultat h1 {
+  display: inline-block;
+  color: #191919;
+  text-transform: uppercase;
+  font-weight: normal;
+  font-family: 'citroenregular', Arial, Helvetica, sans-serif;
+  font-size: 28px;
+  line-height: 18px;
+}
+
+#recherche .bloc_resultat .date {
+  color: #b8b7b8;
+  font-size: 12px;
+  line-height: 8px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+#recherche .bloc_resultat p {
+  margin-top: 18px;
+  font-size: 12px;
+  line-height: 18px;
+  font-family: Arial, Helvetica, sans-serif;
+  color: #756e75;
+}
+
+#recherche .bloc_resultat a {
+  font-family: 'citroenitalic', Arial, Helvetica, sans-serif;
+  font-size: 14px;
+  color: #d62c35;
+  display: inline-block;
+  margin: 15px 0;
+}
+
+#recherche #pagination {
+  width: 420px;
+  margin: 0 auto;
+  padding: 7px 0 15px 0;
+}
+
+#recherche #pagination a {
+  display: inline-block;
+  margin: 0 10px;
+  text-transform: capitalize;
+  color: #756e75;
+  text-decoration: none;
+  font-size: 14px;
+  font-family: 'citroenregular', Arial, Helvetica, sans-serif;
+}
+
+#recherche #pagination .active a {
+  color: #d62c35;
+}
+
+#recherche #pagination .btn {
+  margin: 5px 0;
+  display: inline-block;
+  border: 2px solid #756e75;
+  padding: 7px 26px;
+  border-radius: 5px;
+}
+
+#recherche #pagination .btn a {
+  font-size: 16px;
+}
+
+
+

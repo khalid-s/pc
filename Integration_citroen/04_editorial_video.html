@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <!--[if lt IE 9]>
+            <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+        <![endif]-->
+        <title>04_editorial video</title>
+        <link rel="stylesheet" href="css/style.css"  />
+    </head>
+
+    <body>
+    
+    	<!------------------ HEADER ------------------------------------------------------------------------------>
+        
+        <header>
+        	<div class="Header_1">
+            	<a href="02_home.html" class="logo-citroen"><img src="images/logo-citoen.png" alt="logo CITROËN" /></a>
+                <a href="#" class="btn_logout"><span class="icon_user">&nbsp;</span>DÉCONNEXION</a>
+                <span class="hello_user">Jean-baptiste Poquelin</span>
+                
+                <!---- select language ------>
+                <div class="content_select_language">
+                	<ul class="select_language">
+                    	<li><a href='#'>Langue</a>
+                            <ul>
+                                <li><a href='#'>Français</a></li>
+                                <li><a href='#'>anglais</a></li>
+                            </ul>
+                     	</li>
+                	</ul>
+                </div>
+            </div>
+            
+            <div class="Header_2">
+            	<h1 class="base_line">CRM Manager<br/><span>Les solutions pour booster votre relation client</span></h1>
+                <!-- HTML for SEARCH BAR -->
+                <div id="content_searchBar">
+                    <form id="searchBar" method="get" action="http://www.google.com">
+                            <input type="submit" value="" class="btn_searchBar">
+                            <input type="text" id="inputSearch" class="inputText" name="q" size="21" maxlength="120" value="RECHERCHE">
+                    </form>
+                    <div class="clear"></div>
+                </div>
+				<!-- SCRIPT INPUT RECHERCHE --->
+                <script>
+                   $(function() {
+                       $('#inputSearch').focus(function() {
+                           if ($(this).val() == 'RECHERCHE')
+                           {
+                               $(this).val('');
+                           }
+                       });
+
+                       $('#inputSearch').blur(function() {
+                           if ($(this).val() == '')
+                           {
+                               $(this).val('RECHERCHE');
+                           }
+                       });
+                   });
+                </script>
+            </div>
+            
+            <!------------------ NAVIGATION  -------------------------------------->
+            <nav class="navigation">
+            
+                <ul class="nav-main">
+                    <li class="first "><a href="#">Accueil</a></li>
+                    <li class="list active"><a href="#">Stratégie</a>
+                    	<ul class="nav-sub">
+                            <li><a href="#">Ambition de la marque</a></li>
+                            <li><a href="#">Projections 2016 & objectif</a></li>
+                            <li><a href="#">Résultats des sites pilotes</a></li>
+                            <li><a href="#">Comprendre les indicateurs KPI’s</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">Système d’information Client</a></li>
+                    <li><a href="#">Métier CRM</a></li>
+                    <li><a href="#">Déploiement</a></li>
+                    <li><a href="#">Faq</a></li>
+                    <li><a href="#">Blog</a></li>
+                    <li><a href="#">Base documentaire</a></li>
+                </ul>
+               
+            </nav>
+            
+        </header>
+    	
+        <!------------------ CONTAINER ------------------------------------------------------------------------------>
+        <div id="container">
+        	
+            <!-------- File d'ariane ----------->
+        	<section id="file_dariane">
+            	<div class="wrapper">
+                	<ul class="fil_dariane">
+                    	<li><a href="#">Accueil > </a></li>
+                        <li>Faq</li>
+                    </ul>
+                </div>
+            </section>
+            
+            <!-------- 3 COLONNES -------------->
+            
+            <section id="Article_3_col">
+            	<div class="wrapper">
+                	<nav class="nav_rubrique">
+                    	<h2>stratégie</h2>
+                        <ul>
+                        	<li class="niveau_2"><a href="#" class="active">> Sous rubrique 1.1</a>
+                            	<ul class="subnav">
+                                	<li><a href="#">>> Niveau inférieur 1</a></li>
+                                    <li><a href="#">>> Niveau inférieur 2</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="#">> Sous rubrique 1.2</a></li>
+                            <li><a href="#">> Sous rubrique 1.3</a></li>
+                            <li><a href="#" >> Sous rubrique 1.4</a></li>
+                            <li><a href="#">> Sous rubrique 1.5</a></li>
+                            <li><a href="#">> Sous rubrique 1.6</a></li>
+                        </ul>
+                    </nav>
+                    
+                    <section class="col_center">
+                    	<article>
+                        
+                        	<!-- icon a+ / a- / print --> 
+                            <ul class="btn_txt">
+                                <li><a href="#" class="btn_print"></a></li>
+                                <li><a href="#" class="btn_a_less">a-</a></li>
+                                <li><a href="#" class="btn_a_more">a+</a></li>
+                            </ul>
+                        
+                        	<span>Publié le 15/04/2014</span>
+                        	<h1>Titre coeur de page</h1>
+                            <h2 class="red">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean nec ligula bibendum, mollis erat.</h2>
+                            <p class="intro">
+                            	Phasellus rhoncus imperdiet interdum. In lacinia ipsum euismod, molestie turpis quis, sollicitudin enim. Interdum et malesuada fames ac ante ipsum primis in faucibus.
+                            	Mauris feugiat magna in odio venenatis egestas. Quisque ornare fermentum metus eu vulputate. In vehicula, nulla a fringilla viverra, risus sapien tempus sapien,
+                            	in tincidunt eros sapien vitae mi. Nulla quis laoreet metus
+                            </p>
+                            <p>
+                                <img src="images_administrable/picture_small_article.jpg" alt="lorem ipsum" />
+                                Fusce in lobortis lectus. Aliquam in nunc id est sodales euismod. Cras tristique dui egestas pharetra dignissim. Suspendisse sit amet leo tellus.
+                                Etiam cursus et nunc eu tincidunt. Sed pretium lacus eget massa pulvinar, a laoreet ante tincidunt. Vivamus et sapien quis nulla dictum porttitor quis at quam.
+                                In hac habitasse platea dictumst. Nulla nec turpis purus. Vivamus non iaculis enim. Ut euismod varius odio id aliquet. Integer gravida sagittis libero Fusce in lobortis lectus. 
+                                Aliquam in nunc id est sodales euismod. Cras tristique dui egestas pharetra dignissim. Suspendisse sit amet leo tellus. Etiam cursus et nunc eu tincidunt. Sed pretium lacus 
+                                eget massa pulvinar, a laoreet ante tincidunt.
+                                Vivamus et sapien quis nulla dictum porttitor quis at quam. In hac habitasse platea dictumst.
+                            </p>
+                            <h2 >Lorem ipsum dolor sit amet</h2>
+                            <p>
+                            	Fusce in lobortis lectus. Aliquam in nunc id est sodales euismod. Cras tristique dui egestas pharetra dignissim. Suspendisse sit amet leo
+                            	tellus. Etiam cursus et nunc eu tincidunt. Sed pretium lacus eget massa pulvinar, a laoreet ante tincidunt.
+                            </p>
+                            <iframe width="520" height="293" src="https://www.youtube.com/embed/xe-GPiCb4O0" frameborder="0" allowfullscreen></iframe>
+                    	</article>
+                    </section>
+                    
+                    
+                	<aside>
+                    	<div>
+                        	<h3>Le saviez-vous ?</h3>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. blandit. mollis turpis vel, tincidunt urna.</p>
+                        </div>
+                        <div>
+                        	<h3>Ce que vous nous dites ...</h3>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. blandit. mollis turpis vel, tincidunt urna.</p>
+                        </div>
+                        <div>
+                        	<h3>Ce que disent vos clients ...</h3>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. blandit. mollis turpis vel, tincidunt urna.</p>
+                        </div>
+                        <div class="bg_gray">
+                        	<h3>Ce que disent vos clients ...</h3>
+                            <ul>
+                            	<li><a href="#">> Titre pdf 1</a></li>
+                                <li><a href="#">> Titre pdf 2</a></li>
+                                <li><a href="#">> Titre pdf 3</a></li>
+                            </ul>
+                        </div>
+                    </aside>
+                     
+                </div>
+            </section>
+        </div><!-- END Container ---->
+        
+        
+        <!------------------ FOOTER ------------------------------------------------------------------------------>
+        <footer>
+        	<div class="footer_1">
+            	<div class=" wrapper">
+                    <ul class="first">
+                        <li class="title"><a href="#">Accueil</a></li>
+                    </ul>
+                    <ul>
+                        <li class="title"><a href="#">Stratégie</a></li>
+                        <li ><a href="#">• Ambition de la marque</a></li>
+                        <li ><a href="#">• Projections 2016 & objectif</a></li>
+                        <li ><a href="#">• Résultats des sites pilotes</a></li>
+                        <li ><a href="#">• Comprendre les indicateurs KPI’s</a></li>
+                    </ul>
+                    <ul>
+                        <li class="title"><a href="#">Si client</a></li>
+                        <li ><a href="#">• N-1.1</a></li>
+                        <li ><a href="#">• N-1.2</a></li>
+                        <li ><a href="#">• N-1.3</a></li>
+                        <li ><a href="#">• N-1.4</a></li>
+                        <li ><a href="#">• N-1.5</a></li>
+                        <li ><a href="#">• N-1.6</a></li>
+                        <li ><a href="#">• N-1.7</a></li>
+                    </ul>
+                    <ul>
+                        <li class="title"><a href="#">Si client</a></li>
+                        <li ><a href="#">• Data management</a></li>
+                        <li ><a href="#">• Campaign management</a></li>
+                        <li ><a href="#">• Lead management</a></li>
+                        <li ><a href="#">• Partager & protéger les données</a></li>
+                        <li ><a href="#">• N-1.7</a></li>
+                    </ul>
+                    <ul>
+                        <li class="title"><a href="#">déploiement</a></li>
+                    </ul>
+                    <ul>
+                        <li class="title"><a href="#">faq</a></li>
+                        <li class="title"><a href="#">blog</a></li>
+                        <li class="title"><a href="#">base documentaire</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer_2">
+            	<div class="wrapper">
+                    <ul>
+                        <li><a href="#">Mentions légales</a></li>
+                        <li><a href="#">-  Crédits</a></li>
+                        <li><a href="#">-  Contact</a></li>
+                    </ul>
+                    <a href="#" class="logo_footer"><img style="float: right;" src="images/logo-exellence-client.png" alt="logo exellence client" /></a>
+                </div>
+            </div>
+        </footer>
+    </body>
+</html>

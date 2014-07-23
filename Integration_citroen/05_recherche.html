@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <!--[if lt IE 9]>
+            <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+        <![endif]-->
+        <title>Recherche</title>
+        <link rel="stylesheet" href="css/style.css"  />
+        <script src="js/jquery-latest.min.js"></script>
+		<script src="js/unslider.js"></script>
+
+    </head>
+
+    <body>
+    
+    	<!------------------ HEADER ------------------------------------------------------------------------------>
+        
+        <header>
+        	<div class="Header_1">
+            	<a href="02_home.html" class="logo-citroen"><img src="images/logo-citoen.png" alt="logo CITROËN" /></a>
+                <a href="#" class="btn_logout"><span class="icon_user">&nbsp;</span>DÉCONNEXION</a>
+                <span class="hello_user">Jean-baptiste Poquelin</span>
+                
+                <!---- select language ------>
+                <div class="content_select_language">
+                	<ul class="select_language">
+                    	<li><a href='#'>Langue</a>
+                            <ul>
+                                <li><a href='#'>Français</a></li>
+                                <li><a href='#'>anglais</a></li>
+                            </ul>
+                     	</li>
+                	</ul>
+                </div>
+            </div>
+            
+            <div class="Header_2">
+            	<h1 class="base_line">CRM Manager<br/><span>Les solutions pour booster votre relation client</span></h1>
+                <!-- HTML for SEARCH BAR -->
+                <div id="content_searchBar">
+                    <form id="searchBar" method="get" action="http://www.google.com">
+                            <input type="submit" value="" class="btn_searchBar">
+                            <input type="text" id="inputSearch" class="inputText" name="q" size="21" maxlength="120" value="RECHERCHE">
+                    </form>
+                    <div class="clear"></div>
+                </div>
+				<!-- SCRIPT INPUT RECHERCHE --->
+                <script>
+                   $(function() {
+                       $('#inputSearch').focus(function() {
+                           if ($(this).val() == 'RECHERCHE')
+                           {
+                               $(this).val('');
+                           }
+                       });
+
+                       $('#inputSearch').blur(function() {
+                           if ($(this).val() == '')
+                           {
+                               $(this).val('RECHERCHE');
+                           }
+                       });
+                   });
+                </script>
+            </div>
+            
+            <!------------------ NAVIGATION  -------------------------------------->
+            <nav class="navigation">
+            
+                <ul class="nav-main">
+                    <li class="first"><a href="#">Accueil</a></li>
+                    <li class="list"><a href="#">Stratégie</a>
+                    	<ul class="nav-sub">
+                            <li><a href="#">Ambition de la marque</a></li>
+                            <li><a href="#">Projections 2016 & objectif</a></li>
+                            <li><a href="#">Résultats des sites pilotes</a></li>
+                            <li><a href="#">Comprendre les indicateurs KPI’s</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">Système d’information Client</a></li>
+                    <li><a href="#">Métier CRM</a></li>
+                    <li><a href="#">Déploiement</a></li>
+                    <li><a href="#">Faq</a></li>
+                    <li><a href="#">Blog</a></li>
+                    <li><a href="#">Base documentaire</a></li>
+                </ul>
+               
+            </nav>
+            
+        </header>
+    	
+       <!------------------ CONTAINER ------------------------------------------------------------------------------>
+        <div id="container">
+            <div id="recherche">
+                <div class="wrapper">
+                
+                    <section id="file_dariane">
+                        <div class="wrapper">
+                            <ul class="fil_dariane">
+                                <li><a href="#">Accueil > </a></li>
+                                <li>Recherche</li>
+                            </ul>
+                        </div>
+                    </section>
+
+                    <section class="block-recherche">
+                        <h5>Vous n'êtes pas satisfait du résultat ? Recherchez avec un nouveau mot clé</h5>
+                        <div style="width:551px;height:43px;margin: 0 auto;">
+                            <form action="#">
+                                <input type="text" >
+                                <input type="submit" class="btn_loupe_page_recherche" value=""> 
+                            </form> 
+                        </div>
+
+                    </section>
+
+                    <section class="content">
+
+                        <div id="resultat">
+                            <h3>Résultats : </h3>
+                            <span class="resultats"> 1-10 sur 43</span>
+                        </div>
+
+                        <!-- icon a+ / a- / print --> 
+                            <ul class="btn_txt">
+                                <li><a href="#" class="btn_print"></a></li>
+                                <li><a href="#" class="btn_a_less">a-</a></li>
+                                <li><a href="#" class="btn_a_more">a+</a></li>
+                            </ul>
+
+                        <div class="clear"></div>
+
+                        <hr>
+                        
+                        <div id="champs">
+                            <label for="trie">trier par :</label>
+                            <div class="select">
+                                <select name="trie" id="trie">
+                                    <option value="selectionner">Sélectionner</option>
+                                    <option value="option_1">option 1</option>
+                                    <option value="option_2">Option 2</option>
+                                </select>
+                            </div>
+
+                            <label for="ordre" class="margin020">order</label>
+                            <div class="select">
+                                <select name="order" id="order">
+                                    <option value="order_1">Croissant</option>
+                                    <option value="order_2">order 2</option>
+                                    <option value="order_3">order 3</option>
+                                </select>
+                            </div>
+                        </div>
+
+                        <hr>
+
+                        <div class="bloc_resultat">
+                            <img src="images_administrable/recherche-article-1.png" alt="">
+                            <h1>lorem ipsum dolor</h1><br>
+                            <span class="date">le 15/04/2014</span>
+
+                            <div class="clear"></div>
+
+                            <p>
+                                Fusce in lobortis lectus. Aliquam in nunc id est sodales euismod. Cras tristique dui egestas pharetra dignissim. Suspendisse sit amet leo tellus. Etiam cursus et nunc eu tincidunt. Sed pretium lacus eget massa pulvinar, a laoreet ante tincidunt. Vivamus et sapien quis nulla dictum porttitor quis at quam. <br>
+                                In hac habitasse platea dictumst.
+                            </p>
+
+                            <a href="#">http://www.citroen.fr/duissedloremnonjustohendreritconsequateuegetmetus</a>
+                        </div>
+                        
+                        <hr>
+
+                        <div class="bloc_resultat">
+                            <img src="images_administrable/recherche-article-2.png" alt="">
+                            <h1>lorem ipsum dolor</h1><br>
+                            <span class="date">le 15/04/2014</span>
+
+                            <div class="clear"></div>
+
+                            <p>
+                                Fusce in lobortis lectus. Aliquam in nunc id est sodales euismod. Cras tristique dui egestas pharetra dignissim. Suspendisse sit amet leo tellus. Etiam cursus et nunc eu tincidunt. Sed pretium lacus eget massa pulvinar, a laoreet ante tincidunt. Vivamus et sapien quis nulla dictum porttitor quis at quam. <br>
+                                In hac habitasse platea dictumst.
+                            </p>
+
+                            <a href="#">http://www.citroen.fr/duissedloremnonjustohendreritconsequateuegetmetus</a>
+                        </div>
+                        
+                        <hr>
+
+                        <div class="bloc_resultat">
+                            <img src="images_administrable/recherche-article-3.png" alt="">
+                            <h1>lorem ipsum dolor</h1><br>
+                            <span class="date">le 15/04/2014</span>
+
+                            <div class="clear"></div>
+
+                            <p>
+                                Fusce in lobortis lectus. Aliquam in nunc id est sodales euismod. Cras tristique dui egestas pharetra dignissim. Suspendisse sit amet leo tellus. Etiam cursus et nunc eu tincidunt. Sed pretium lacus eget massa pulvinar, a laoreet ante tincidunt. Vivamus et sapien quis nulla dictum porttitor quis at quam. <br>
+                                In hac habitasse platea dictumst.
+                            </p>
+
+                            <a href="#">http://www.citroen.fr/duissedloremnonjustohendreritconsequateuegetmetus</a>
+                        </div>
+                        
+                        <hr>
+
+                        <div class="bloc_resultat">
+                            <img src="images_administrable/recherche-article-1.png" alt="">
+                            <h1>lorem ipsum dolor</h1><br>
+                            <span class="date">le 15/04/2014</span>
+
+                            <div class="clear"></div>
+
+                            <p>
+                                Fusce in lobortis lectus. Aliquam in nunc id est sodales euismod. Cras tristique dui egestas pharetra dignissim. Suspendisse sit amet leo tellus. Etiam cursus et nunc eu tincidunt. Sed pretium lacus eget massa pulvinar, a laoreet ante tincidunt. Vivamus et sapien quis nulla dictum porttitor quis at quam. <br>
+                                In hac habitasse platea dictumst.
+                            </p>
+
+                            <a href="#">http://www.citroen.fr/duissedloremnonjustohendreritconsequateuegetmetus</a>
+                        </div>
+                        
+                        <hr>
+
+                        <div class="bloc_resultat">
+                            <img src="images_administrable/recherche-article-2.png" alt="">
+                            <h1>lorem ipsum dolor</h1><br>
+                            <span class="date">le 15/04/2014</span>
+
+                            <div class="clear"></div>
+
+                            <p>
+                                Fusce in lobortis lectus. Aliquam in nunc id est sodales euismod. Cras tristique dui egestas pharetra dignissim. Suspendisse sit amet leo tellus. Etiam cursus et nunc eu tincidunt. Sed pretium lacus eget massa pulvinar, a laoreet ante tincidunt. Vivamus et sapien quis nulla dictum porttitor quis at quam. <br>
+                                In hac habitasse platea dictumst.
+                            </p>
+
+                            <a href="#">http://www.citroen.fr/duissedloremnonjustohendreritconsequateuegetmetus</a>
+                        </div>
+                        
+                        <hr>
+
+                        <div class="bloc_resultat">
+                            <img src="images_administrable/recherche-article-3.png" alt="">
+                            <h1>lorem ipsum dolor</h1><br>
+                            <span class="date">le 15/04/2014</span>
+
+                            <div class="clear"></div>
+
+                            <p>
+                                Fusce in lobortis lectus. Aliquam in nunc id est sodales euismod. Cras tristique dui egestas pharetra dignissim. Suspendisse sit amet leo tellus. Etiam cursus et nunc eu tincidunt. Sed pretium lacus eget massa pulvinar, a laoreet ante tincidunt. Vivamus et sapien quis nulla dictum porttitor quis at quam. <br>
+                                In hac habitasse platea dictumst.
+                            </p>
+
+                            <a href="#">http://www.citroen.fr/duissedloremnonjustohendreritconsequateuegetmetus</a>
+                        </div>
+                        
+                        <hr>
+
+                        <div id="pagination">
+                            <span class="btn">
+                                <a href="#">précédent</a>
+                            </span>
+
+                            <span class="page"><a href="#">1</a></span>
+                            <span class="page"><a href="#">2</a></span>
+                            <span class="page"><a href="#">3</a></span>
+                            <span class="page active"><a href="#">4</a></span>
+                            <span class="page"><a href="#">5</a></span>
+                            
+                            <span class="btn">
+                                <a href="#">suivant</a>
+                            </span>
+                        </div>
+
+
+                    </section><!-- END Content -->
+
+                </div><!-- END Wrapper -->
+            </div><!-- END Recherche -->
+       </div><!-- END Container ---->
+        
+        
+         <!------------------ FOOTER --------------------------------------------------------------------------- -->
+        <footer>
+        	<div class="footer_1">
+            	<div class=" wrapper">
+                    <ul class="first">
+                        <li class="title"><a href="#">Accueil</a></li>
+                    </ul>
+                    <ul>
+                        <li class="title"><a href="#">Stratégie</a></li>
+                        <li ><a href="#">• Ambition de la marque</a></li>
+                        <li ><a href="#">• Projections 2016 & objectif</a></li>
+                        <li ><a href="#">• Résultats des sites pilotes</a></li>
+                        <li ><a href="#">• Comprendre les indicateurs KPI’s</a></li>
+                    </ul>
+                    <ul>
+                        <li class="title"><a href="#">Si client</a></li>
+                        <li ><a href="#">• N-1.1</a></li>
+                        <li ><a href="#">• N-1.2</a></li>
+                        <li ><a href="#">• N-1.3</a></li>
+                        <li ><a href="#">• N-1.4</a></li>
+                        <li ><a href="#">• N-1.5</a></li>
+                        <li ><a href="#">• N-1.6</a></li>
+                        <li ><a href="#">• N-1.7</a></li>
+                    </ul>
+                    <ul>
+                        <li class="title"><a href="#">Si client</a></li>
+                        <li ><a href="#">• Data management</a></li>
+                        <li ><a href="#">• Campaign management</a></li>
+                        <li ><a href="#">• Lead management</a></li>
+                        <li ><a href="#">• Partager & protéger les données</a></li>
+                        <li ><a href="#">• N-1.7</a></li>
+                    </ul>
+                    <ul>
+                        <li class="title"><a href="#">déploiement</a></li>
+                    </ul>
+                    <ul>
+                        <li class="title"><a href="#">faq</a></li>
+                        <li class="title"><a href="#">blog</a></li>
+                        <li class="title"><a href="#">base documentaire</a></li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="footer_2">
+            	<div class="wrapper">
+                    <ul>
+                        <li><a href="#">Mentions légales</a></li>
+                        <li><a href="#">-  Crédits</a></li>
+                        <li><a href="#">-  Contact</a></li>
+                    </ul>
+                    <a href="#" class="logo_footer"><img style="float: right;" src="images/logo-exellence-client-network2.png" alt="logo exellence client" /></a>
+                </div>
+            </div>
+            
+           
+        </footer>
+        <!--- SCRIPT SLIDER - -->
+		<script type="text/javascript">
+			$(function() {
+				$('.banner').unslider({
+					speed: 500,               //  The speed to animate each slide (in milliseconds)
+					//delay: 3000,              //  The delay between slide animations (in milliseconds)
+					//keys: true,               //  Enable keyboard (left, right) arrow shortcuts
+					dots: true,               //  Display dot navigation
+					fluid: false              //  Support responsive design. May break non-responsive designs
+				});
+			});
+        </script>
+    </body>
+</html>
